@@ -1,0 +1,17 @@
+{
+  "complete": true,
+  "boot_time_Asia_Shanghai": "2026-10-30 20:03:29",
+  "boot_route": "Normal systemctl reboot after one-time stock entry consumed; default Ubuntu entry configured for unlock",
+  "kernel": "6.8.0-147-generic",
+  "loaded_driver": "580.178.04",
+  "disk_driver": "580.178.04",
+  "gpu_unlock_target_present": true,
+  "gpu_unlock_resume": 0,
+  "rtd3": 0,
+  "grub_next_entry_empty": true,
+  "unlock_passes": 4,
+  "all_passes_return_zero": true,
+  "handoff": "stage=handoff ret=0 state=4 retained=0 pages=0/20606 cleanup=0",
+  "unlocked_message": true,
+  "verification": "Default entry arguments, current boot arguments and current kernel journal checked locally; private boot identifiers omitted."
+}

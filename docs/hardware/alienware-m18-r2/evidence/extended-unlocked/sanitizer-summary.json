@@ -1,0 +1,30 @@
+[
+  {
+    "tool": "memcheck",
+    "exit": 0,
+    "elapsed_s": 1.0419354130001466,
+    "numerical_cases": 6,
+    "summary": [
+      "========= LEAK SUMMARY: 0 bytes leaked in 0 allocations",
+      "========= ERROR SUMMARY: 0 errors"
+    ]
+  },
+  {
+    "tool": "initcheck",
+    "exit": 0,
+    "elapsed_s": 0.7649337549999018,
+    "numerical_cases": 6,
+    "summary": [
+      "========= ERROR SUMMARY: 0 errors"
+    ]
+  },
+  {
+    "tool": "synccheck",
+    "exit": 0,
+    "elapsed_s": 0.764097559999982,
+    "numerical_cases": 6,
+    "summary": [
+      "========= ERROR SUMMARY: 0 errors"
+    ]
+  }
+]

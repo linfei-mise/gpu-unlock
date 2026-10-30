@@ -20,7 +20,7 @@ concurrency:
 # release, which the plugin downloads from.
 jobs:
   discover:
-    if: github.ref == 'refs/heads/main'
+    if: github.repository == 'Zagitta/gpu-unlock' && github.ref == 'refs/heads/main'
     runs-on: ubuntu-24.04
     outputs:
       releases: ${{ steps.find.outputs.releases }}

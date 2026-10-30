@@ -1,0 +1,67 @@
+{
+  "gpu": "RTX 4090 Laptop; driver 580.178.04; power.limit N/A; identity verified locally",
+  "cubin_sha256": "e90cc66d2af181e1741ab8845bcb192b63e1d1ad37a23d3fca2108d7bb8565ca",
+  "iters": 20000,
+  "reps": 3,
+  "blocks": 1056,
+  "threads": 256,
+  "warps": 8448,
+  "chains": 8,
+  "modes": {
+    "f16_f32": {
+      "instruction": "bench_f16_f32",
+      "k": 16,
+      "times_ms": [
+        38.98489761352539,
+        38.51366424560547,
+        38.64064025878906
+      ],
+      "rates_Top_per_s": [
+        142.01605285425137,
+        143.75368816359068,
+        143.2813028697342
+      ],
+      "best_Top_per_s": 143.75368816359068,
+      "expected_cell": 10240000,
+      "cells_checked": 270336,
+      "mismatches": 0
+    },
+    "tf32": {
+      "instruction": "bench_tf32",
+      "k": 8,
+      "times_ms": [
+        38.79219055175781,
+        37.11577606201172,
+        32.9716796875
+      ],
+      "rates_Top_per_s": [
+        71.36077134665861,
+        74.58393528872796,
+        83.95813213754703
+      ],
+      "best_Top_per_s": 83.95813213754703,
+      "expected_cell": 5120000,
+      "cells_checked": 270336,
+      "mismatches": 0
+    },
+    "u4_s32": {
+      "instruction": "bench_u4",
+      "k": 64,
+      "times_ms": [
+        32.97353744506836,
+        33.04140853881836,
+        32.866302490234375
+      ],
+      "rates_Top_per_s": [
+        671.6272149111567,
+        670.2476104788961,
+        673.8185753198206
+      ],
+      "best_Top_per_s": 673.8185753198206,
+      "expected_cell": 40960000,
+      "cells_checked": 270336,
+      "mismatches": 0
+    }
+  },
+  "seconds": 0.6874473094940186
+}

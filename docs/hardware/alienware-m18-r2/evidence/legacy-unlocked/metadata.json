@@ -1,0 +1,30 @@
+{
+  "kernel": "6.8.0-147-generic",
+  "driver": "580.178.04",
+  "gpu": "NVIDIA GeForce RTX 4090 Laptop GPU, PCI-REDACTED, 580.178.04, 95.03.3B.00.2B, 16376 MiB, 125.00 W, 175.00 W",
+  "bios": "1.11.0",
+  "module_params": [
+    "PreserveVideoMemoryAllocations: 1",
+    "DynamicPowerManagement: 0"
+  ],
+  "runtime_control": "on",
+  "runtime_status_before": "active",
+  "binary_manifest": {
+    "mma_bench": {
+      "sha256": "fa4996f65ff3a05c7f50c4864c10ecef70186e86c51f90113741f29aaf219aa5",
+      "source": "diagnostics/bench/mma_bench.cu",
+      "source_sha256": "7a02decd30c017ec05b61d25c34cf46958242ceeed65852c31ea0736dbdefca4"
+    },
+    "validate_gemm": {
+      "sha256": "2ca8e655a0cf0db59877d6874621e728a61433c066ef36e931c79710627ed48a",
+      "source": "diagnostics/bench/validate_gemm.cu",
+      "source_sha256": "9bebdbd5fc0975ec6f48c0356f51c4218dd6768cc81eff107dfb5448f10e3c69"
+    },
+    "gemm_bench": {
+      "sha256": "8ec2e03ad7ccf0e202de0b3a7c8f0835cf335633e073a6d5e772a3f3f104a302",
+      "source": "docs/evidence/rtx4090-pr1-stock/gemm_bench.cu",
+      "source_sha256": "c35ec706f9587b9749bf369a35d4dfca9e88c666c4582726490e0138cdd6e240"
+    }
+  },
+  "label": "Historical comparison: RTD3 differs across the two states"
+}

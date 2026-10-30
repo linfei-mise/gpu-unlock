@@ -1,0 +1,3960 @@
+{
+  "complete": true,
+  "state": "unlocked",
+  "suite": "checks",
+  "torch": "2.14.1+cu130",
+  "cuda": "13.0",
+  "gpu_name": "NVIDIA GeForce RTX 4090 Laptop GPU",
+  "seed_policy": "fixed CPU generators",
+  "script_sha256": "fa43aec5b72f6ab554755fcef4f28cb906ec98e47a8afb9217c58aafb1044087",
+  "records": [
+    {
+      "kind": "checker_negative_controls",
+      "passed": 3
+    },
+    {
+      "kind": "gemm_numerical",
+      "mode": "fp16_fp32",
+      "shape_mkn": [
+        32,
+        64,
+        48
+      ],
+      "seed": 7,
+      "pattern": "dyadic",
+      "layout": "contiguous",
+      "input_strides": [
+        [
+          64,
+          1
+        ],
+        [
+          48,
+          1
+        ]
+      ],
+      "sha256": "dea9b5d189f2232e47ecc9f002eeab9f62f288c88bd5042d0e8b19df9b8d3417",
+      "failures": 0,
+      "cells": 1536,
+      "max_abs_error": 0.0,
+      "relative_l2_error": 0.0
+    },
+    {
+      "kind": "gemm_numerical",
+      "mode": "fp16_fp32",
+      "shape_mkn": [
+        32,
+        64,
+        48
+      ],
+      "seed": 7,
+      "pattern": "dyadic",
+      "layout": "transposed",
+      "input_strides": [
+        [
+          1,
+          32
+        ],
+        [
+          1,
+          64
+        ]
+      ],
+      "sha256": "d2ec241028c4a4c9e9f850569ab16011039b957ae4c82902a61456483dc4f0ba",
+      "failures": 0,
+      "cells": 1536,
+      "max_abs_error": 0.0,
+      "relative_l2_error": 0.0
+    },
+    {
+      "kind": "gemm_numerical",
+      "mode": "fp16_fp32",
+      "shape_mkn": [
+        32,
+        64,
+        48
+      ],
+      "seed": 7,
+      "pattern": "scaled_normal",
+      "layout": "contiguous",
+      "input_strides": [
+        [
+          64,
+          1
+        ],
+        [
+          48,
+          1
+        ]
+      ],
+      "sha256": "82da1267d94f100448e7784edd608282b72d7411f154df934bd5af392ec74d09",
+      "failures": 0,
+      "cells": 1536,
+      "max_abs_error": 5.145557224750519e-07,
+      "relative_l2_error": 1.5429949301042469e-07
+    },
+    {
+      "kind": "gemm_numerical",
+      "mode": "fp16_fp32",
+      "shape_mkn": [
+        32,
+        64,
+        48
+      ],
+      "seed": 7,
+      "pattern": "scaled_normal",
+      "layout": "transposed",
+      "input_strides": [
+        [
+          1,
+          32
+        ],
+        [
+          1,
+          64
+        ]
+      ],
+      "sha256": "76f40d0be3e40efaa17859ba65fa7bf5bf89838383468ee08331671ffef7ffc7",
+      "failures": 0,
+      "cells": 1536,
+      "max_abs_error": 6.16069883108139e-07,
+      "relative_l2_error": 1.5624621585708603e-07
+    },
+    {
+      "kind": "gemm_numerical",
+      "mode": "fp16_fp32",
+      "shape_mkn": [
+        32,
+        64,
+        48
+      ],
+      "seed": 2026,
+      "pattern": "dyadic",
+      "layout": "contiguous",
+      "input_strides": [
+        [
+          64,
+          1
+        ],
+        [
+          48,
+          1
+        ]
+      ],
+      "sha256": "a45971575039ca48fef0bd43766bd8e90b20ea66db8f33e2d8a41d89c9f20509",
+      "failures": 0,
+      "cells": 1536,
+      "max_abs_error": 0.0,
+      "relative_l2_error": 0.0
+    },
+    {
+      "kind": "gemm_numerical",
+      "mode": "fp16_fp32",
+      "shape_mkn": [
+        32,
+        64,
+        48
+      ],
+      "seed": 2026,
+      "pattern": "dyadic",
+      "layout": "transposed",
+      "input_strides": [
+        [
+          1,
+          32
+        ],
+        [
+          1,
+          64
+        ]
+      ],
+      "sha256": "ec4dc35cefddff6b1e12c7423ca45bda5b4dafb9a6a0a2aec82ef8f439b47235",
+      "failures": 0,
+      "cells": 1536,
+      "max_abs_error": 0.0,
+      "relative_l2_error": 0.0
+    },
+    {
+      "kind": "gemm_numerical",
+      "mode": "fp16_fp32",
+      "shape_mkn": [
+        32,
+        64,
+        48
+      ],
+      "seed": 2026,
+      "pattern": "scaled_normal",
+      "layout": "contiguous",
+      "input_strides": [
+        [
+          64,
+          1
+        ],
+        [
+          48,
+          1
+        ]
+      ],
+      "sha256": "1165951448bb3c8445aa7c6cfe1fce7514e78449c689f8cde2a9b950c68b5acb",
+      "failures": 0,
+      "cells": 1536,
+      "max_abs_error": 3.7963036447763443e-07,
+      "relative_l2_error": 1.4994839064057155e-07
+    },
+    {
+      "kind": "gemm_numerical",
+      "mode": "fp16_fp32",
+      "shape_mkn": [
+        32,
+        64,
+        48
+      ],
+      "seed": 2026,
+      "pattern": "scaled_normal",
+      "layout": "transposed",
+      "input_strides": [
+        [
+          1,
+          32
+        ],
+        [
+          1,
+          64
+        ]
+      ],
+      "sha256": "334940cc3d6457733465e77c9fd0431ad49ddbfb3d70e449787dc0e9692721a4",
+      "failures": 0,
+      "cells": 1536,
+      "max_abs_error": 6.793998181819916e-07,
+      "relative_l2_error": 1.6101824624169096e-07
+    },
+    {
+      "kind": "gemm_numerical",
+      "mode": "fp16_fp32",
+      "shape_mkn": [
+        127,
+        95,
+        65
+      ],
+      "seed": 7,
+      "pattern": "dyadic",
+      "layout": "contiguous",
+      "input_strides": [
+        [
+          95,
+          1
+        ],
+        [
+          65,
+          1
+        ]
+      ],
+      "sha256": "578f8c3b562539731608c386f5ff5bb924ac687d22a37758663a9ccc0877f460",
+      "failures": 0,
+      "cells": 8255,
+      "max_abs_error": 0.0,
+      "relative_l2_error": 0.0
+    },
+    {
+      "kind": "gemm_numerical",
+      "mode": "fp16_fp32",
+      "shape_mkn": [
+        127,
+        95,
+        65
+      ],
+      "seed": 7,
+      "pattern": "dyadic",
+      "layout": "transposed",
+      "input_strides": [
+        [
+          1,
+          127
+        ],
+        [
+          1,
+          95
+        ]
+      ],
+      "sha256": "b9dd88aa96a104ce4d0f90fd579717ce1338f0b9c5c70f87721d3db3642ee0a2",
+      "failures": 0,
+      "cells": 8255,
+      "max_abs_error": 0.0,
+      "relative_l2_error": 0.0
+    },
+    {
+      "kind": "gemm_numerical",
+      "mode": "fp16_fp32",
+      "shape_mkn": [
+        127,
+        95,
+        65
+      ],
+      "seed": 7,
+      "pattern": "scaled_normal",
+      "layout": "contiguous",
+      "input_strides": [
+        [
+          95,
+          1
+        ],
+        [
+          65,
+          1
+        ]
+      ],
+      "sha256": "827eeaa8ccf9beebf7c4bda0114e173a474b9fa42bd717540b5942c611060376",
+      "failures": 0,
+      "cells": 8255,
+      "max_abs_error": 2.948218025267124e-07,
+      "relative_l2_error": 8.104572240418965e-08
+    },
+    {
+      "kind": "gemm_numerical",
+      "mode": "fp16_fp32",
+      "shape_mkn": [
+        127,
+        95,
+        65
+      ],
+      "seed": 7,
+      "pattern": "scaled_normal",
+      "layout": "transposed",
+      "input_strides": [
+        [
+          1,
+          127
+        ],
+        [
+          1,
+          95
+        ]
+      ],
+      "sha256": "53043bcc50c9dc1ea077bec6a127d29fb7a8a4a25b1c70e1ba82130e126d6c93",
+      "failures": 0,
+      "cells": 8255,
+      "max_abs_error": 3.2474054023623466e-07,
+      "relative_l2_error": 7.976170318803084e-08
+    },
+    {
+      "kind": "gemm_numerical",
+      "mode": "fp16_fp32",
+      "shape_mkn": [
+        127,
+        95,
+        65
+      ],
+      "seed": 2026,
+      "pattern": "dyadic",
+      "layout": "contiguous",
+      "input_strides": [
+        [
+          95,
+          1
+        ],
+        [
+          65,
+          1
+        ]
+      ],
+      "sha256": "7c11961b1be28c36bcbc28fca426f5863683e775aa22e075a6f5095531fbddce",
+      "failures": 0,
+      "cells": 8255,
+      "max_abs_error": 0.0,
+      "relative_l2_error": 0.0
+    },
+    {
+      "kind": "gemm_numerical",
+      "mode": "fp16_fp32",
+      "shape_mkn": [
+        127,
+        95,
+        65
+      ],
+      "seed": 2026,
+      "pattern": "dyadic",
+      "layout": "transposed",
+      "input_strides": [
+        [
+          1,
+          127
+        ],
+        [
+          1,
+          95
+        ]
+      ],
+      "sha256": "8a61afb65a202cfb79f3a551d031a1518dd8225a86c5e7bf42c66ade041f88b1",
+      "failures": 0,
+      "cells": 8255,
+      "max_abs_error": 0.0,
+      "relative_l2_error": 0.0
+    },
+    {
+      "kind": "gemm_numerical",
+      "mode": "fp16_fp32",
+      "shape_mkn": [
+        127,
+        95,
+        65
+      ],
+      "seed": 2026,
+      "pattern": "scaled_normal",
+      "layout": "contiguous",
+      "input_strides": [
+        [
+          95,
+          1
+        ],
+        [
+          65,
+          1
+        ]
+      ],
+      "sha256": "e79a4d1b8bbcc19350d416c39d9a3d6c79ff59e27b543796979bda9f572a7981",
+      "failures": 0,
+      "cells": 8255,
+      "max_abs_error": 3.0780211091041565e-07,
+      "relative_l2_error": 8.006472846128403e-08
+    },
+    {
+      "kind": "gemm_numerical",
+      "mode": "fp16_fp32",
+      "shape_mkn": [
+        127,
+        95,
+        65
+      ],
+      "seed": 2026,
+      "pattern": "scaled_normal",
+      "layout": "transposed",
+      "input_strides": [
+        [
+          1,
+          127
+        ],
+        [
+          1,
+          95
+        ]
+      ],
+      "sha256": "8ccd705a27945c312e708e95acac512d11768753bfbd7b6a694f285886d9fe20",
+      "failures": 0,
+      "cells": 8255,
+      "max_abs_error": 3.471504896879196e-07,
+      "relative_l2_error": 8.145275555763815e-08
+    },
+    {
+      "kind": "gemm_numerical",
+      "mode": "fp16_fp32",
+      "shape_mkn": [
+        256,
+        256,
+        256
+      ],
+      "seed": 7,
+      "pattern": "dyadic",
+      "layout": "contiguous",
+      "input_strides": [
+        [
+          256,
+          1
+        ],
+        [
+          256,
+          1
+        ]
+      ],
+      "sha256": "308848815caa00539af6cccf70cd81f85352966c78c60e381273603bf4a72728",
+      "failures": 0,
+      "cells": 65536,
+      "max_abs_error": 0.0,
+      "relative_l2_error": 0.0
+    },
+    {
+      "kind": "gemm_numerical",
+      "mode": "fp16_fp32",
+      "shape_mkn": [
+        256,
+        256,
+        256
+      ],
+      "seed": 7,
+      "pattern": "dyadic",
+      "layout": "transposed",
+      "input_strides": [
+        [
+          1,
+          256
+        ],
+        [
+          1,
+          256
+        ]
+      ],
+      "sha256": "4ced98129bfe7c913934bde5f46055efdadd4daece2dd750fe247d61ca258701",
+      "failures": 0,
+      "cells": 65536,
+      "max_abs_error": 0.0,
+      "relative_l2_error": 0.0
+    },
+    {
+      "kind": "gemm_numerical",
+      "mode": "fp16_fp32",
+      "shape_mkn": [
+        256,
+        256,
+        256
+      ],
+      "seed": 7,
+      "pattern": "scaled_normal",
+      "layout": "contiguous",
+      "input_strides": [
+        [
+          256,
+          1
+        ],
+        [
+          256,
+          1
+        ]
+      ],
+      "sha256": "14679c75d621501fc2410b2b7ce3572bf62dc3662ea91c5d0f8dd7de0aeb56f6",
+      "failures": 0,
+      "cells": 65536,
+      "max_abs_error": 5.168381903786212e-06,
+      "relative_l2_error": 4.853816890174155e-07
+    },
+    {
+      "kind": "gemm_numerical",
+      "mode": "fp16_fp32",
+      "shape_mkn": [
+        256,
+        256,
+        256
+      ],
+      "seed": 7,
+      "pattern": "scaled_normal",
+      "layout": "transposed",
+      "input_strides": [
+        [
+          1,
+          256
+        ],
+        [
+          1,
+          256
+        ]
+      ],
+      "sha256": "c2a652eae9a0985a5f8c4a0f11b49fb567b5eae6e4fb6fcc5f2e3ae66ff0155c",
+      "failures": 0,
+      "cells": 65536,
+      "max_abs_error": 3.2334355637431145e-06,
+      "relative_l2_error": 4.830053951019281e-07
+    },
+    {
+      "kind": "gemm_numerical",
+      "mode": "fp16_fp32",
+      "shape_mkn": [
+        256,
+        256,
+        256
+      ],
+      "seed": 2026,
+      "pattern": "dyadic",
+      "layout": "contiguous",
+      "input_strides": [
+        [
+          256,
+          1
+        ],
+        [
+          256,
+          1
+        ]
+      ],
+      "sha256": "1f44fe848d732fb6073dd1933eb57c6cfb11193de91fe94e4f57c248beff1143",
+      "failures": 0,
+      "cells": 65536,
+      "max_abs_error": 0.0,
+      "relative_l2_error": 0.0
+    },
+    {
+      "kind": "gemm_numerical",
+      "mode": "fp16_fp32",
+      "shape_mkn": [
+        256,
+        256,
+        256
+      ],
+      "seed": 2026,
+      "pattern": "dyadic",
+      "layout": "transposed",
+      "input_strides": [
+        [
+          1,
+          256
+        ],
+        [
+          1,
+          256
+        ]
+      ],
+      "sha256": "01b40b54389ca95490a6acdeb837f79d9cb558047f63890bc23ccce98464a4c4",
+      "failures": 0,
+      "cells": 65536,
+      "max_abs_error": 0.0,
+      "relative_l2_error": 0.0
+    },
+    {
+      "kind": "gemm_numerical",
+      "mode": "fp16_fp32",
+      "shape_mkn": [
+        256,
+        256,
+        256
+      ],
+      "seed": 2026,
+      "pattern": "scaled_normal",
+      "layout": "contiguous",
+      "input_strides": [
+        [
+          256,
+          1
+        ],
+        [
+          256,
+          1
+        ]
+      ],
+      "sha256": "30442bb8ac6de5fc31df19f8428b76ef69a366aed4b073215490127d177f92bf",
+      "failures": 0,
+      "cells": 65536,
+      "max_abs_error": 3.4332042559981346e-06,
+      "relative_l2_error": 4.861598561257782e-07
+    },
+    {
+      "kind": "gemm_numerical",
+      "mode": "fp16_fp32",
+      "shape_mkn": [
+        256,
+        256,
+        256
+      ],
+      "seed": 2026,
+      "pattern": "scaled_normal",
+      "layout": "transposed",
+      "input_strides": [
+        [
+          1,
+          256
+        ],
+        [
+          1,
+          256
+        ]
+      ],
+      "sha256": "e3181da04fe8dfe219495d71f12729067b69d1e2ed1e75eef67c658f83ad50a3",
+      "failures": 0,
+      "cells": 65536,
+      "max_abs_error": 4.3695472413674e-06,
+      "relative_l2_error": 4.842679986733793e-07
+    },
+    {
+      "kind": "gemm_numerical",
+      "mode": "fp16_fp32",
+      "shape_mkn": [
+        257,
+        513,
+        129
+      ],
+      "seed": 7,
+      "pattern": "dyadic",
+      "layout": "contiguous",
+      "input_strides": [
+        [
+          513,
+          1
+        ],
+        [
+          129,
+          1
+        ]
+      ],
+      "sha256": "bef846fc200369013103e7afdd29228ee898a51f444cf6e4fc48dc3f21206d15",
+      "failures": 0,
+      "cells": 33153,
+      "max_abs_error": 0.0,
+      "relative_l2_error": 0.0
+    },
+    {
+      "kind": "gemm_numerical",
+      "mode": "fp16_fp32",
+      "shape_mkn": [
+        257,
+        513,
+        129
+      ],
+      "seed": 7,
+      "pattern": "dyadic",
+      "layout": "transposed",
+      "input_strides": [
+        [
+          1,
+          257
+        ],
+        [
+          1,
+          513
+        ]
+      ],
+      "sha256": "39e3b9c13a7f3c5eb3440440b09570ed6247a1c415a30f34223ed260a828902c",
+      "failures": 0,
+      "cells": 33153,
+      "max_abs_error": 0.0,
+      "relative_l2_error": 0.0
+    },
+    {
+      "kind": "gemm_numerical",
+      "mode": "fp16_fp32",
+      "shape_mkn": [
+        257,
+        513,
+        129
+      ],
+      "seed": 7,
+      "pattern": "scaled_normal",
+      "layout": "contiguous",
+      "input_strides": [
+        [
+          513,
+          1
+        ],
+        [
+          129,
+          1
+        ]
+      ],
+      "sha256": "0ee71f405e524de9182ad7106e879fe3bb01ff8907dc391319ef27b0e5301723",
+      "failures": 0,
+      "cells": 33153,
+      "max_abs_error": 1.947217242559418e-06,
+      "relative_l2_error": 2.3088664196471684e-07
+    },
+    {
+      "kind": "gemm_numerical",
+      "mode": "fp16_fp32",
+      "shape_mkn": [
+        257,
+        513,
+        129
+      ],
+      "seed": 7,
+      "pattern": "scaled_normal",
+      "layout": "transposed",
+      "input_strides": [
+        [
+          1,
+          257
+        ],
+        [
+          1,
+          513
+        ]
+      ],
+      "sha256": "c3dca4c351c2f30c837c6a8cfb7bb90c0a34518202a5be28a19feb3513e7a045",
+      "failures": 0,
+      "cells": 33153,
+      "max_abs_error": 9.637376933824271e-06,
+      "relative_l2_error": 9.037447124223708e-07
+    },
+    {
+      "kind": "gemm_numerical",
+      "mode": "fp16_fp32",
+      "shape_mkn": [
+        257,
+        513,
+        129
+      ],
+      "seed": 2026,
+      "pattern": "dyadic",
+      "layout": "contiguous",
+      "input_strides": [
+        [
+          513,
+          1
+        ],
+        [
+          129,
+          1
+        ]
+      ],
+      "sha256": "23c5d06a5c7440537cab5bf5ba3203457991a4520ed920e9962b77737fbfa7ad",
+      "failures": 0,
+      "cells": 33153,
+      "max_abs_error": 0.0,
+      "relative_l2_error": 0.0
+    },
+    {
+      "kind": "gemm_numerical",
+      "mode": "fp16_fp32",
+      "shape_mkn": [
+        257,
+        513,
+        129
+      ],
+      "seed": 2026,
+      "pattern": "dyadic",
+      "layout": "transposed",
+      "input_strides": [
+        [
+          1,
+          257
+        ],
+        [
+          1,
+          513
+        ]
+      ],
+      "sha256": "722e602559e8a46911e16bcbd0ade3dead4593e526ab5350d15065e2063f9822",
+      "failures": 0,
+      "cells": 33153,
+      "max_abs_error": 0.0,
+      "relative_l2_error": 0.0
+    },
+    {
+      "kind": "gemm_numerical",
+      "mode": "fp16_fp32",
+      "shape_mkn": [
+        257,
+        513,
+        129
+      ],
+      "seed": 2026,
+      "pattern": "scaled_normal",
+      "layout": "contiguous",
+      "input_strides": [
+        [
+          513,
+          1
+        ],
+        [
+          129,
+          1
+        ]
+      ],
+      "sha256": "faa6c0cbc419d9ed7a162293b7238d980855441927570f1340646e13d10765bf",
+      "failures": 0,
+      "cells": 33153,
+      "max_abs_error": 1.7337733879685402e-06,
+      "relative_l2_error": 2.3218856422160766e-07
+    },
+    {
+      "kind": "gemm_numerical",
+      "mode": "fp16_fp32",
+      "shape_mkn": [
+        257,
+        513,
+        129
+      ],
+      "seed": 2026,
+      "pattern": "scaled_normal",
+      "layout": "transposed",
+      "input_strides": [
+        [
+          1,
+          257
+        ],
+        [
+          1,
+          513
+        ]
+      ],
+      "sha256": "57e4944e777cb3701b9172020f6d7403e5096ee5615b87d00e927734d6a8ee82",
+      "failures": 0,
+      "cells": 33153,
+      "max_abs_error": 8.091359632089734e-06,
+      "relative_l2_error": 9.022983602914953e-07
+    },
+    {
+      "kind": "gemm_numerical",
+      "mode": "bf16_fp32",
+      "shape_mkn": [
+        32,
+        64,
+        48
+      ],
+      "seed": 7,
+      "pattern": "dyadic",
+      "layout": "contiguous",
+      "input_strides": [
+        [
+          64,
+          1
+        ],
+        [
+          48,
+          1
+        ]
+      ],
+      "sha256": "dea9b5d189f2232e47ecc9f002eeab9f62f288c88bd5042d0e8b19df9b8d3417",
+      "failures": 0,
+      "cells": 1536,
+      "max_abs_error": 0.0,
+      "relative_l2_error": 0.0
+    },
+    {
+      "kind": "gemm_numerical",
+      "mode": "bf16_fp32",
+      "shape_mkn": [
+        32,
+        64,
+        48
+      ],
+      "seed": 7,
+      "pattern": "dyadic",
+      "layout": "transposed",
+      "input_strides": [
+        [
+          1,
+          32
+        ],
+        [
+          1,
+          64
+        ]
+      ],
+      "sha256": "d2ec241028c4a4c9e9f850569ab16011039b957ae4c82902a61456483dc4f0ba",
+      "failures": 0,
+      "cells": 1536,
+      "max_abs_error": 0.0,
+      "relative_l2_error": 0.0
+    },
+    {
+      "kind": "gemm_numerical",
+      "mode": "bf16_fp32",
+      "shape_mkn": [
+        32,
+        64,
+        48
+      ],
+      "seed": 7,
+      "pattern": "scaled_normal",
+      "layout": "contiguous",
+      "input_strides": [
+        [
+          64,
+          1
+        ],
+        [
+          48,
+          1
+        ]
+      ],
+      "sha256": "d28ce9fcff35897bd41540097df2c3fc6f52c937b048ff5357f06d3f3a805a84",
+      "failures": 0,
+      "cells": 1536,
+      "max_abs_error": 2.7567148208618164e-07,
+      "relative_l2_error": 7.55720421267989e-08
+    },
+    {
+      "kind": "gemm_numerical",
+      "mode": "bf16_fp32",
+      "shape_mkn": [
+        32,
+        64,
+        48
+      ],
+      "seed": 7,
+      "pattern": "scaled_normal",
+      "layout": "transposed",
+      "input_strides": [
+        [
+          1,
+          32
+        ],
+        [
+          1,
+          64
+        ]
+      ],
+      "sha256": "14109caf28c59e176fa4d30c833953f21f77e69e24580508b94d1a7ed94992a6",
+      "failures": 0,
+      "cells": 1536,
+      "max_abs_error": 1.809094101190567e-07,
+      "relative_l2_error": 7.039591103110175e-08
+    },
+    {
+      "kind": "gemm_numerical",
+      "mode": "bf16_fp32",
+      "shape_mkn": [
+        32,
+        64,
+        48
+      ],
+      "seed": 2026,
+      "pattern": "dyadic",
+      "layout": "contiguous",
+      "input_strides": [
+        [
+          64,
+          1
+        ],
+        [
+          48,
+          1
+        ]
+      ],
+      "sha256": "a45971575039ca48fef0bd43766bd8e90b20ea66db8f33e2d8a41d89c9f20509",
+      "failures": 0,
+      "cells": 1536,
+      "max_abs_error": 0.0,
+      "relative_l2_error": 0.0
+    },
+    {
+      "kind": "gemm_numerical",
+      "mode": "bf16_fp32",
+      "shape_mkn": [
+        32,
+        64,
+        48
+      ],
+      "seed": 2026,
+      "pattern": "dyadic",
+      "layout": "transposed",
+      "input_strides": [
+        [
+          1,
+          32
+        ],
+        [
+          1,
+          64
+        ]
+      ],
+      "sha256": "ec4dc35cefddff6b1e12c7423ca45bda5b4dafb9a6a0a2aec82ef8f439b47235",
+      "failures": 0,
+      "cells": 1536,
+      "max_abs_error": 0.0,
+      "relative_l2_error": 0.0
+    },
+    {
+      "kind": "gemm_numerical",
+      "mode": "bf16_fp32",
+      "shape_mkn": [
+        32,
+        64,
+        48
+      ],
+      "seed": 2026,
+      "pattern": "scaled_normal",
+      "layout": "contiguous",
+      "input_strides": [
+        [
+          64,
+          1
+        ],
+        [
+          48,
+          1
+        ]
+      ],
+      "sha256": "8366c402dbf0729da4c6cb090f8eba99ad2e524e2016d317b17681044d60e265",
+      "failures": 0,
+      "cells": 1536,
+      "max_abs_error": 2.0884908735752106e-07,
+      "relative_l2_error": 7.088193166991126e-08
+    },
+    {
+      "kind": "gemm_numerical",
+      "mode": "bf16_fp32",
+      "shape_mkn": [
+        32,
+        64,
+        48
+      ],
+      "seed": 2026,
+      "pattern": "scaled_normal",
+      "layout": "transposed",
+      "input_strides": [
+        [
+          1,
+          32
+        ],
+        [
+          1,
+          64
+        ]
+      ],
+      "sha256": "1f765cbef30fed46c7e35731c65c5a3966b04d5db0758767ef4165ee0c5f9336",
+      "failures": 0,
+      "cells": 1536,
+      "max_abs_error": 2.60770320892334e-07,
+      "relative_l2_error": 7.600012085490857e-08
+    },
+    {
+      "kind": "gemm_numerical",
+      "mode": "bf16_fp32",
+      "shape_mkn": [
+        127,
+        95,
+        65
+      ],
+      "seed": 7,
+      "pattern": "dyadic",
+      "layout": "contiguous",
+      "input_strides": [
+        [
+          95,
+          1
+        ],
+        [
+          65,
+          1
+        ]
+      ],
+      "sha256": "578f8c3b562539731608c386f5ff5bb924ac687d22a37758663a9ccc0877f460",
+      "failures": 0,
+      "cells": 8255,
+      "max_abs_error": 0.0,
+      "relative_l2_error": 0.0
+    },
+    {
+      "kind": "gemm_numerical",
+      "mode": "bf16_fp32",
+      "shape_mkn": [
+        127,
+        95,
+        65
+      ],
+      "seed": 7,
+      "pattern": "dyadic",
+      "layout": "transposed",
+      "input_strides": [
+        [
+          1,
+          127
+        ],
+        [
+          1,
+          95
+        ]
+      ],
+      "sha256": "b9dd88aa96a104ce4d0f90fd579717ce1338f0b9c5c70f87721d3db3642ee0a2",
+      "failures": 0,
+      "cells": 8255,
+      "max_abs_error": 0.0,
+      "relative_l2_error": 0.0
+    },
+    {
+      "kind": "gemm_numerical",
+      "mode": "bf16_fp32",
+      "shape_mkn": [
+        127,
+        95,
+        65
+      ],
+      "seed": 7,
+      "pattern": "scaled_normal",
+      "layout": "contiguous",
+      "input_strides": [
+        [
+          95,
+          1
+        ],
+        [
+          65,
+          1
+        ]
+      ],
+      "sha256": "bf8cc74b03384742d884ea9f836409d7bcb975245c4c3b6a446960f6f71d2f4d",
+      "failures": 0,
+      "cells": 8255,
+      "max_abs_error": 2.123415470123291e-07,
+      "relative_l2_error": 5.4564702786983404e-08
+    },
+    {
+      "kind": "gemm_numerical",
+      "mode": "bf16_fp32",
+      "shape_mkn": [
+        127,
+        95,
+        65
+      ],
+      "seed": 7,
+      "pattern": "scaled_normal",
+      "layout": "transposed",
+      "input_strides": [
+        [
+          1,
+          127
+        ],
+        [
+          1,
+          95
+        ]
+      ],
+      "sha256": "c09d037edddbbdccce7afd39986de83e0ae29fe85b3d9ed905dae524dd8e8994",
+      "failures": 0,
+      "cells": 8255,
+      "max_abs_error": 2.2724270820617676e-07,
+      "relative_l2_error": 5.3610641434406774e-08
+    },
+    {
+      "kind": "gemm_numerical",
+      "mode": "bf16_fp32",
+      "shape_mkn": [
+        127,
+        95,
+        65
+      ],
+      "seed": 2026,
+      "pattern": "dyadic",
+      "layout": "contiguous",
+      "input_strides": [
+        [
+          95,
+          1
+        ],
+        [
+          65,
+          1
+        ]
+      ],
+      "sha256": "7c11961b1be28c36bcbc28fca426f5863683e775aa22e075a6f5095531fbddce",
+      "failures": 0,
+      "cells": 8255,
+      "max_abs_error": 0.0,
+      "relative_l2_error": 0.0
+    },
+    {
+      "kind": "gemm_numerical",
+      "mode": "bf16_fp32",
+      "shape_mkn": [
+        127,
+        95,
+        65
+      ],
+      "seed": 2026,
+      "pattern": "dyadic",
+      "layout": "transposed",
+      "input_strides": [
+        [
+          1,
+          127
+        ],
+        [
+          1,
+          95
+        ]
+      ],
+      "sha256": "8a61afb65a202cfb79f3a551d031a1518dd8225a86c5e7bf42c66ade041f88b1",
+      "failures": 0,
+      "cells": 8255,
+      "max_abs_error": 0.0,
+      "relative_l2_error": 0.0
+    },
+    {
+      "kind": "gemm_numerical",
+      "mode": "bf16_fp32",
+      "shape_mkn": [
+        127,
+        95,
+        65
+      ],
+      "seed": 2026,
+      "pattern": "scaled_normal",
+      "layout": "contiguous",
+      "input_strides": [
+        [
+          95,
+          1
+        ],
+        [
+          65,
+          1
+        ]
+      ],
+      "sha256": "c49d30ac7d55ac4be44f6c65a826d8a7210b6e64216064914cb64504e378af38",
+      "failures": 0,
+      "cells": 8255,
+      "max_abs_error": 2.3469328880310059e-07,
+      "relative_l2_error": 5.3517018669947244e-08
+    },
+    {
+      "kind": "gemm_numerical",
+      "mode": "bf16_fp32",
+      "shape_mkn": [
+        127,
+        95,
+        65
+      ],
+      "seed": 2026,
+      "pattern": "scaled_normal",
+      "layout": "transposed",
+      "input_strides": [
+        [
+          1,
+          127
+        ],
+        [
+          1,
+          95
+        ]
+      ],
+      "sha256": "dc27a42c26f98bc22fe06c09579b032c62fc3d8c35f040b6d5b9454bf2b10edb",
+      "failures": 0,
+      "cells": 8255,
+      "max_abs_error": 2.477318048477173e-07,
+      "relative_l2_error": 5.638169496826401e-08
+    },
+    {
+      "kind": "gemm_numerical",
+      "mode": "bf16_fp32",
+      "shape_mkn": [
+        256,
+        256,
+        256
+      ],
+      "seed": 7,
+      "pattern": "dyadic",
+      "layout": "contiguous",
+      "input_strides": [
+        [
+          256,
+          1
+        ],
+        [
+          256,
+          1
+        ]
+      ],
+      "sha256": "308848815caa00539af6cccf70cd81f85352966c78c60e381273603bf4a72728",
+      "failures": 0,
+      "cells": 65536,
+      "max_abs_error": 0.0,
+      "relative_l2_error": 0.0
+    },
+    {
+      "kind": "gemm_numerical",
+      "mode": "bf16_fp32",
+      "shape_mkn": [
+        256,
+        256,
+        256
+      ],
+      "seed": 7,
+      "pattern": "dyadic",
+      "layout": "transposed",
+      "input_strides": [
+        [
+          1,
+          256
+        ],
+        [
+          1,
+          256
+        ]
+      ],
+      "sha256": "4ced98129bfe7c913934bde5f46055efdadd4daece2dd750fe247d61ca258701",
+      "failures": 0,
+      "cells": 65536,
+      "max_abs_error": 0.0,
+      "relative_l2_error": 0.0
+    },
+    {
+      "kind": "gemm_numerical",
+      "mode": "bf16_fp32",
+      "shape_mkn": [
+        256,
+        256,
+        256
+      ],
+      "seed": 7,
+      "pattern": "scaled_normal",
+      "layout": "contiguous",
+      "input_strides": [
+        [
+          256,
+          1
+        ],
+        [
+          256,
+          1
+        ]
+      ],
+      "sha256": "4f35c72f41bdd0baab1dbaed23b4491f4ee17c1595ddbf636930740626a22af8",
+      "failures": 0,
+      "cells": 65536,
+      "max_abs_error": 1.9315630197525024e-06,
+      "relative_l2_error": 2.5039481220251996e-07
+    },
+    {
+      "kind": "gemm_numerical",
+      "mode": "bf16_fp32",
+      "shape_mkn": [
+        256,
+        256,
+        256
+      ],
+      "seed": 7,
+      "pattern": "scaled_normal",
+      "layout": "transposed",
+      "input_strides": [
+        [
+          1,
+          256
+        ],
+        [
+          1,
+          256
+        ]
+      ],
+      "sha256": "1f0790818d391a0f401ccb447e861a9a26eadf011cfcc77999f1b79ff4a768f2",
+      "failures": 0,
+      "cells": 65536,
+      "max_abs_error": 1.8812716007232666e-06,
+      "relative_l2_error": 2.473740618254539e-07
+    },
+    {
+      "kind": "gemm_numerical",
+      "mode": "bf16_fp32",
+      "shape_mkn": [
+        256,
+        256,
+        256
+      ],
+      "seed": 2026,
+      "pattern": "dyadic",
+      "layout": "contiguous",
+      "input_strides": [
+        [
+          256,
+          1
+        ],
+        [
+          256,
+          1
+        ]
+      ],
+      "sha256": "1f44fe848d732fb6073dd1933eb57c6cfb11193de91fe94e4f57c248beff1143",
+      "failures": 0,
+      "cells": 65536,
+      "max_abs_error": 0.0,
+      "relative_l2_error": 0.0
+    },
+    {
+      "kind": "gemm_numerical",
+      "mode": "bf16_fp32",
+      "shape_mkn": [
+        256,
+        256,
+        256
+      ],
+      "seed": 2026,
+      "pattern": "dyadic",
+      "layout": "transposed",
+      "input_strides": [
+        [
+          1,
+          256
+        ],
+        [
+          1,
+          256
+        ]
+      ],
+      "sha256": "01b40b54389ca95490a6acdeb837f79d9cb558047f63890bc23ccce98464a4c4",
+      "failures": 0,
+      "cells": 65536,
+      "max_abs_error": 0.0,
+      "relative_l2_error": 0.0
+    },
+    {
+      "kind": "gemm_numerical",
+      "mode": "bf16_fp32",
+      "shape_mkn": [
+        256,
+        256,
+        256
+      ],
+      "seed": 2026,
+      "pattern": "scaled_normal",
+      "layout": "contiguous",
+      "input_strides": [
+        [
+          256,
+          1
+        ],
+        [
+          256,
+          1
+        ]
+      ],
+      "sha256": "93f0a5fc418428734a2dfa688fab3ad8846bd915d6fb7154a22be53e807c2f34",
+      "failures": 0,
+      "cells": 65536,
+      "max_abs_error": 1.9567087292671204e-06,
+      "relative_l2_error": 2.47274945123302e-07
+    },
+    {
+      "kind": "gemm_numerical",
+      "mode": "bf16_fp32",
+      "shape_mkn": [
+        256,
+        256,
+        256
+      ],
+      "seed": 2026,
+      "pattern": "scaled_normal",
+      "layout": "transposed",
+      "input_strides": [
+        [
+          1,
+          256
+        ],
+        [
+          1,
+          256
+        ]
+      ],
+      "sha256": "d623077478a7d459ec5853eaadae0257ac47b3c99a9827b002abdc273213086c",
+      "failures": 0,
+      "cells": 65536,
+      "max_abs_error": 1.769745722413063e-06,
+      "relative_l2_error": 2.4491697069855264e-07
+    },
+    {
+      "kind": "gemm_numerical",
+      "mode": "bf16_fp32",
+      "shape_mkn": [
+        257,
+        513,
+        129
+      ],
+      "seed": 7,
+      "pattern": "dyadic",
+      "layout": "contiguous",
+      "input_strides": [
+        [
+          513,
+          1
+        ],
+        [
+          129,
+          1
+        ]
+      ],
+      "sha256": "bef846fc200369013103e7afdd29228ee898a51f444cf6e4fc48dc3f21206d15",
+      "failures": 0,
+      "cells": 33153,
+      "max_abs_error": 0.0,
+      "relative_l2_error": 0.0
+    },
+    {
+      "kind": "gemm_numerical",
+      "mode": "bf16_fp32",
+      "shape_mkn": [
+        257,
+        513,
+        129
+      ],
+      "seed": 7,
+      "pattern": "dyadic",
+      "layout": "transposed",
+      "input_strides": [
+        [
+          1,
+          257
+        ],
+        [
+          1,
+          513
+        ]
+      ],
+      "sha256": "39e3b9c13a7f3c5eb3440440b09570ed6247a1c415a30f34223ed260a828902c",
+      "failures": 0,
+      "cells": 33153,
+      "max_abs_error": 0.0,
+      "relative_l2_error": 0.0
+    },
+    {
+      "kind": "gemm_numerical",
+      "mode": "bf16_fp32",
+      "shape_mkn": [
+        257,
+        513,
+        129
+      ],
+      "seed": 7,
+      "pattern": "scaled_normal",
+      "layout": "contiguous",
+      "input_strides": [
+        [
+          513,
+          1
+        ],
+        [
+          129,
+          1
+        ]
+      ],
+      "sha256": "55db806ef381b8a58097273d7ffc86d53145277cbab7de087eb8c7622189202e",
+      "failures": 0,
+      "cells": 33153,
+      "max_abs_error": 1.2135133147239685e-06,
+      "relative_l2_error": 9.575322060213587e-08
+    },
+    {
+      "kind": "gemm_numerical",
+      "mode": "bf16_fp32",
+      "shape_mkn": [
+        257,
+        513,
+        129
+      ],
+      "seed": 7,
+      "pattern": "scaled_normal",
+      "layout": "transposed",
+      "input_strides": [
+        [
+          1,
+          257
+        ],
+        [
+          1,
+          513
+        ]
+      ],
+      "sha256": "bee54e3335b6348d5dd886244c24710fd781227db3b88c23361e754b3f06f6f2",
+      "failures": 0,
+      "cells": 33153,
+      "max_abs_error": 1.1016381904482841e-06,
+      "relative_l2_error": 9.715818678410213e-08
+    },
+    {
+      "kind": "gemm_numerical",
+      "mode": "bf16_fp32",
+      "shape_mkn": [
+        257,
+        513,
+        129
+      ],
+      "seed": 2026,
+      "pattern": "dyadic",
+      "layout": "contiguous",
+      "input_strides": [
+        [
+          513,
+          1
+        ],
+        [
+          129,
+          1
+        ]
+      ],
+      "sha256": "23c5d06a5c7440537cab5bf5ba3203457991a4520ed920e9962b77737fbfa7ad",
+      "failures": 0,
+      "cells": 33153,
+      "max_abs_error": 0.0,
+      "relative_l2_error": 0.0
+    },
+    {
+      "kind": "gemm_numerical",
+      "mode": "bf16_fp32",
+      "shape_mkn": [
+        257,
+        513,
+        129
+      ],
+      "seed": 2026,
+      "pattern": "dyadic",
+      "layout": "transposed",
+      "input_strides": [
+        [
+          1,
+          257
+        ],
+        [
+          1,
+          513
+        ]
+      ],
+      "sha256": "722e602559e8a46911e16bcbd0ade3dead4593e526ab5350d15065e2063f9822",
+      "failures": 0,
+      "cells": 33153,
+      "max_abs_error": 0.0,
+      "relative_l2_error": 0.0
+    },
+    {
+      "kind": "gemm_numerical",
+      "mode": "bf16_fp32",
+      "shape_mkn": [
+        257,
+        513,
+        129
+      ],
+      "seed": 2026,
+      "pattern": "scaled_normal",
+      "layout": "contiguous",
+      "input_strides": [
+        [
+          513,
+          1
+        ],
+        [
+          129,
+          1
+        ]
+      ],
+      "sha256": "179c956c6abc3e6e9a65d1f21b9b83e81841d387382251f179f3ff537bd34d7f",
+      "failures": 0,
+      "cells": 33153,
+      "max_abs_error": 9.927898645401e-07,
+      "relative_l2_error": 9.697192437174818e-08
+    },
+    {
+      "kind": "gemm_numerical",
+      "mode": "bf16_fp32",
+      "shape_mkn": [
+        257,
+        513,
+        129
+      ],
+      "seed": 2026,
+      "pattern": "scaled_normal",
+      "layout": "transposed",
+      "input_strides": [
+        [
+          1,
+          257
+        ],
+        [
+          1,
+          513
+        ]
+      ],
+      "sha256": "cd8f59be5b6bd9d97c1ed76abc69d9fcdc718bedf423c734b73aac6db62732b8",
+      "failures": 0,
+      "cells": 33153,
+      "max_abs_error": 8.973293006420135e-07,
+      "relative_l2_error": 9.672787447298852e-08
+    },
+    {
+      "kind": "gemm_numerical",
+      "mode": "fp32_ieee",
+      "shape_mkn": [
+        32,
+        64,
+        48
+      ],
+      "seed": 7,
+      "pattern": "dyadic",
+      "layout": "contiguous",
+      "input_strides": [
+        [
+          64,
+          1
+        ],
+        [
+          48,
+          1
+        ]
+      ],
+      "sha256": "dea9b5d189f2232e47ecc9f002eeab9f62f288c88bd5042d0e8b19df9b8d3417",
+      "failures": 0,
+      "cells": 1536,
+      "max_abs_error": 0.0,
+      "relative_l2_error": 0.0
+    },
+    {
+      "kind": "gemm_numerical",
+      "mode": "fp32_ieee",
+      "shape_mkn": [
+        32,
+        64,
+        48
+      ],
+      "seed": 7,
+      "pattern": "dyadic",
+      "layout": "transposed",
+      "input_strides": [
+        [
+          1,
+          32
+        ],
+        [
+          1,
+          64
+        ]
+      ],
+      "sha256": "d2ec241028c4a4c9e9f850569ab16011039b957ae4c82902a61456483dc4f0ba",
+      "failures": 0,
+      "cells": 1536,
+      "max_abs_error": 0.0,
+      "relative_l2_error": 0.0
+    },
+    {
+      "kind": "gemm_numerical",
+      "mode": "fp32_ieee",
+      "shape_mkn": [
+        32,
+        64,
+        48
+      ],
+      "seed": 7,
+      "pattern": "scaled_normal",
+      "layout": "contiguous",
+      "input_strides": [
+        [
+          64,
+          1
+        ],
+        [
+          48,
+          1
+        ]
+      ],
+      "sha256": "5d7c45cf566180515ea5456554aa4f5fe1b1d4af5ac90720876778813d8b3a10",
+      "failures": 0,
+      "cells": 1536,
+      "max_abs_error": 3.9228038839489443e-07,
+      "relative_l2_error": 1.5073314787642786e-07
+    },
+    {
+      "kind": "gemm_numerical",
+      "mode": "fp32_ieee",
+      "shape_mkn": [
+        32,
+        64,
+        48
+      ],
+      "seed": 7,
+      "pattern": "scaled_normal",
+      "layout": "transposed",
+      "input_strides": [
+        [
+          1,
+          32
+        ],
+        [
+          1,
+          64
+        ]
+      ],
+      "sha256": "b5f02e34b1e1be2d666662b17b9e9e8f52d334c0595e4b814572199de27168c3",
+      "failures": 0,
+      "cells": 1536,
+      "max_abs_error": 2.1120884508007975e-07,
+      "relative_l2_error": 8.604830808441363e-08
+    },
+    {
+      "kind": "gemm_numerical",
+      "mode": "fp32_ieee",
+      "shape_mkn": [
+        32,
+        64,
+        48
+      ],
+      "seed": 2026,
+      "pattern": "dyadic",
+      "layout": "contiguous",
+      "input_strides": [
+        [
+          64,
+          1
+        ],
+        [
+          48,
+          1
+        ]
+      ],
+      "sha256": "a45971575039ca48fef0bd43766bd8e90b20ea66db8f33e2d8a41d89c9f20509",
+      "failures": 0,
+      "cells": 1536,
+      "max_abs_error": 0.0,
+      "relative_l2_error": 0.0
+    },
+    {
+      "kind": "gemm_numerical",
+      "mode": "fp32_ieee",
+      "shape_mkn": [
+        32,
+        64,
+        48
+      ],
+      "seed": 2026,
+      "pattern": "dyadic",
+      "layout": "transposed",
+      "input_strides": [
+        [
+          1,
+          32
+        ],
+        [
+          1,
+          64
+        ]
+      ],
+      "sha256": "ec4dc35cefddff6b1e12c7423ca45bda5b4dafb9a6a0a2aec82ef8f439b47235",
+      "failures": 0,
+      "cells": 1536,
+      "max_abs_error": 0.0,
+      "relative_l2_error": 0.0
+    },
+    {
+      "kind": "gemm_numerical",
+      "mode": "fp32_ieee",
+      "shape_mkn": [
+        32,
+        64,
+        48
+      ],
+      "seed": 2026,
+      "pattern": "scaled_normal",
+      "layout": "contiguous",
+      "input_strides": [
+        [
+          64,
+          1
+        ],
+        [
+          48,
+          1
+        ]
+      ],
+      "sha256": "f6f91e68507cb31e3cc05869f360432564d55566693b356b7f30ade802c67b54",
+      "failures": 0,
+      "cells": 1536,
+      "max_abs_error": 3.4859831710143396e-07,
+      "relative_l2_error": 1.4378624259601692e-07
+    },
+    {
+      "kind": "gemm_numerical",
+      "mode": "fp32_ieee",
+      "shape_mkn": [
+        32,
+        64,
+        48
+      ],
+      "seed": 2026,
+      "pattern": "scaled_normal",
+      "layout": "transposed",
+      "input_strides": [
+        [
+          1,
+          32
+        ],
+        [
+          1,
+          64
+        ]
+      ],
+      "sha256": "ecb6b5506872e746a04252d99f76f4b659d4e8aa4383064877be575fc3306c73",
+      "failures": 0,
+      "cells": 1536,
+      "max_abs_error": 3.5200283998726434e-07,
+      "relative_l2_error": 8.570087702169896e-08
+    },
+    {
+      "kind": "gemm_numerical",
+      "mode": "fp32_ieee",
+      "shape_mkn": [
+        127,
+        95,
+        65
+      ],
+      "seed": 7,
+      "pattern": "dyadic",
+      "layout": "contiguous",
+      "input_strides": [
+        [
+          95,
+          1
+        ],
+        [
+          65,
+          1
+        ]
+      ],
+      "sha256": "578f8c3b562539731608c386f5ff5bb924ac687d22a37758663a9ccc0877f460",
+      "failures": 0,
+      "cells": 8255,
+      "max_abs_error": 0.0,
+      "relative_l2_error": 0.0
+    },
+    {
+      "kind": "gemm_numerical",
+      "mode": "fp32_ieee",
+      "shape_mkn": [
+        127,
+        95,
+        65
+      ],
+      "seed": 7,
+      "pattern": "dyadic",
+      "layout": "transposed",
+      "input_strides": [
+        [
+          1,
+          127
+        ],
+        [
+          1,
+          95
+        ]
+      ],
+      "sha256": "b9dd88aa96a104ce4d0f90fd579717ce1338f0b9c5c70f87721d3db3642ee0a2",
+      "failures": 0,
+      "cells": 8255,
+      "max_abs_error": 0.0,
+      "relative_l2_error": 0.0
+    },
+    {
+      "kind": "gemm_numerical",
+      "mode": "fp32_ieee",
+      "shape_mkn": [
+        127,
+        95,
+        65
+      ],
+      "seed": 7,
+      "pattern": "scaled_normal",
+      "layout": "contiguous",
+      "input_strides": [
+        [
+          95,
+          1
+        ],
+        [
+          65,
+          1
+        ]
+      ],
+      "sha256": "3acac2b1341f46614f3a1a61f85ff390588b565b2b10d25b29135a968135fd4e",
+      "failures": 0,
+      "cells": 8255,
+      "max_abs_error": 2.581771987308912e-07,
+      "relative_l2_error": 8.142260609834184e-08
+    },
+    {
+      "kind": "gemm_numerical",
+      "mode": "fp32_ieee",
+      "shape_mkn": [
+        127,
+        95,
+        65
+      ],
+      "seed": 7,
+      "pattern": "scaled_normal",
+      "layout": "transposed",
+      "input_strides": [
+        [
+          1,
+          127
+        ],
+        [
+          1,
+          95
+        ]
+      ],
+      "sha256": "9264e8f8ad1c709b4d7f2b57b097f584b4980b0c79302bfd9b820f75531bc18e",
+      "failures": 0,
+      "cells": 8255,
+      "max_abs_error": 3.4002023130419445e-07,
+      "relative_l2_error": 9.318714418245444e-08
+    },
+    {
+      "kind": "gemm_numerical",
+      "mode": "fp32_ieee",
+      "shape_mkn": [
+        127,
+        95,
+        65
+      ],
+      "seed": 2026,
+      "pattern": "dyadic",
+      "layout": "contiguous",
+      "input_strides": [
+        [
+          95,
+          1
+        ],
+        [
+          65,
+          1
+        ]
+      ],
+      "sha256": "7c11961b1be28c36bcbc28fca426f5863683e775aa22e075a6f5095531fbddce",
+      "failures": 0,
+      "cells": 8255,
+      "max_abs_error": 0.0,
+      "relative_l2_error": 0.0
+    },
+    {
+      "kind": "gemm_numerical",
+      "mode": "fp32_ieee",
+      "shape_mkn": [
+        127,
+        95,
+        65
+      ],
+      "seed": 2026,
+      "pattern": "dyadic",
+      "layout": "transposed",
+      "input_strides": [
+        [
+          1,
+          127
+        ],
+        [
+          1,
+          95
+        ]
+      ],
+      "sha256": "8a61afb65a202cfb79f3a551d031a1518dd8225a86c5e7bf42c66ade041f88b1",
+      "failures": 0,
+      "cells": 8255,
+      "max_abs_error": 0.0,
+      "relative_l2_error": 0.0
+    },
+    {
+      "kind": "gemm_numerical",
+      "mode": "fp32_ieee",
+      "shape_mkn": [
+        127,
+        95,
+        65
+      ],
+      "seed": 2026,
+      "pattern": "scaled_normal",
+      "layout": "contiguous",
+      "input_strides": [
+        [
+          95,
+          1
+        ],
+        [
+          65,
+          1
+        ]
+      ],
+      "sha256": "5862af2643a69d01ff7810db32dbf513b9b8e549b541064dd4820783b8d54e9d",
+      "failures": 0,
+      "cells": 8255,
+      "max_abs_error": 2.8975929211583207e-07,
+      "relative_l2_error": 8.250397428331498e-08
+    },
+    {
+      "kind": "gemm_numerical",
+      "mode": "fp32_ieee",
+      "shape_mkn": [
+        127,
+        95,
+        65
+      ],
+      "seed": 2026,
+      "pattern": "scaled_normal",
+      "layout": "transposed",
+      "input_strides": [
+        [
+          1,
+          127
+        ],
+        [
+          1,
+          95
+        ]
+      ],
+      "sha256": "e8dbf5a125ccc8cc1a2cfd498710f3dd8e9addc9223605e5b34e1de120152774",
+      "failures": 0,
+      "cells": 8255,
+      "max_abs_error": 3.6241525169788957e-07,
+      "relative_l2_error": 9.455107127211603e-08
+    },
+    {
+      "kind": "gemm_numerical",
+      "mode": "fp32_ieee",
+      "shape_mkn": [
+        256,
+        256,
+        256
+      ],
+      "seed": 7,
+      "pattern": "dyadic",
+      "layout": "contiguous",
+      "input_strides": [
+        [
+          256,
+          1
+        ],
+        [
+          256,
+          1
+        ]
+      ],
+      "sha256": "308848815caa00539af6cccf70cd81f85352966c78c60e381273603bf4a72728",
+      "failures": 0,
+      "cells": 65536,
+      "max_abs_error": 0.0,
+      "relative_l2_error": 0.0
+    },
+    {
+      "kind": "gemm_numerical",
+      "mode": "fp32_ieee",
+      "shape_mkn": [
+        256,
+        256,
+        256
+      ],
+      "seed": 7,
+      "pattern": "dyadic",
+      "layout": "transposed",
+      "input_strides": [
+        [
+          1,
+          256
+        ],
+        [
+          1,
+          256
+        ]
+      ],
+      "sha256": "4ced98129bfe7c913934bde5f46055efdadd4daece2dd750fe247d61ca258701",
+      "failures": 0,
+      "cells": 65536,
+      "max_abs_error": 0.0,
+      "relative_l2_error": 0.0
+    },
+    {
+      "kind": "gemm_numerical",
+      "mode": "fp32_ieee",
+      "shape_mkn": [
+        256,
+        256,
+        256
+      ],
+      "seed": 7,
+      "pattern": "scaled_normal",
+      "layout": "contiguous",
+      "input_strides": [
+        [
+          256,
+          1
+        ],
+        [
+          256,
+          1
+        ]
+      ],
+      "sha256": "4d207510ef3ba1d68783780653c60f58145c89ec6d9a5ce6ebfe1fe97aa1ba5c",
+      "failures": 0,
+      "cells": 65536,
+      "max_abs_error": 6.539433323737853e-07,
+      "relative_l2_error": 1.1259076185478507e-07
+    },
+    {
+      "kind": "gemm_numerical",
+      "mode": "fp32_ieee",
+      "shape_mkn": [
+        256,
+        256,
+        256
+      ],
+      "seed": 7,
+      "pattern": "scaled_normal",
+      "layout": "transposed",
+      "input_strides": [
+        [
+          1,
+          256
+        ],
+        [
+          1,
+          256
+        ]
+      ],
+      "sha256": "d6048c8e4654363bc14c09b612fdce88fd8e533a71334ccd8d9aac6c04c7080d",
+      "failures": 0,
+      "cells": 65536,
+      "max_abs_error": 8.989487747523839e-07,
+      "relative_l2_error": 1.5097886578240458e-07
+    },
+    {
+      "kind": "gemm_numerical",
+      "mode": "fp32_ieee",
+      "shape_mkn": [
+        256,
+        256,
+        256
+      ],
+      "seed": 2026,
+      "pattern": "dyadic",
+      "layout": "contiguous",
+      "input_strides": [
+        [
+          256,
+          1
+        ],
+        [
+          256,
+          1
+        ]
+      ],
+      "sha256": "1f44fe848d732fb6073dd1933eb57c6cfb11193de91fe94e4f57c248beff1143",
+      "failures": 0,
+      "cells": 65536,
+      "max_abs_error": 0.0,
+      "relative_l2_error": 0.0
+    },
+    {
+      "kind": "gemm_numerical",
+      "mode": "fp32_ieee",
+      "shape_mkn": [
+        256,
+        256,
+        256
+      ],
+      "seed": 2026,
+      "pattern": "dyadic",
+      "layout": "transposed",
+      "input_strides": [
+        [
+          1,
+          256
+        ],
+        [
+          1,
+          256
+        ]
+      ],
+      "sha256": "01b40b54389ca95490a6acdeb837f79d9cb558047f63890bc23ccce98464a4c4",
+      "failures": 0,
+      "cells": 65536,
+      "max_abs_error": 0.0,
+      "relative_l2_error": 0.0
+    },
+    {
+      "kind": "gemm_numerical",
+      "mode": "fp32_ieee",
+      "shape_mkn": [
+        256,
+        256,
+        256
+      ],
+      "seed": 2026,
+      "pattern": "scaled_normal",
+      "layout": "contiguous",
+      "input_strides": [
+        [
+          256,
+          1
+        ],
+        [
+          256,
+          1
+        ]
+      ],
+      "sha256": "26eb8f1df14ef90f95ddddf7d7e283e714d4ed9a871dff85d06c97ba3f1ca5c0",
+      "failures": 0,
+      "cells": 65536,
+      "max_abs_error": 6.504441059096422e-07,
+      "relative_l2_error": 1.1287101744248674e-07
+    },
+    {
+      "kind": "gemm_numerical",
+      "mode": "fp32_ieee",
+      "shape_mkn": [
+        256,
+        256,
+        256
+      ],
+      "seed": 2026,
+      "pattern": "scaled_normal",
+      "layout": "transposed",
+      "input_strides": [
+        [
+          1,
+          256
+        ],
+        [
+          1,
+          256
+        ]
+      ],
+      "sha256": "1db92f3845f0f8a3c76f782b516a3069e8f06a459a577ea50b83e5fa07efaade",
+      "failures": 0,
+      "cells": 65536,
+      "max_abs_error": 9.814741499525326e-07,
+      "relative_l2_error": 1.5002949243645399e-07
+    },
+    {
+      "kind": "gemm_numerical",
+      "mode": "fp32_ieee",
+      "shape_mkn": [
+        257,
+        513,
+        129
+      ],
+      "seed": 7,
+      "pattern": "dyadic",
+      "layout": "contiguous",
+      "input_strides": [
+        [
+          513,
+          1
+        ],
+        [
+          129,
+          1
+        ]
+      ],
+      "sha256": "bef846fc200369013103e7afdd29228ee898a51f444cf6e4fc48dc3f21206d15",
+      "failures": 0,
+      "cells": 33153,
+      "max_abs_error": 0.0,
+      "relative_l2_error": 0.0
+    },
+    {
+      "kind": "gemm_numerical",
+      "mode": "fp32_ieee",
+      "shape_mkn": [
+        257,
+        513,
+        129
+      ],
+      "seed": 7,
+      "pattern": "dyadic",
+      "layout": "transposed",
+      "input_strides": [
+        [
+          1,
+          257
+        ],
+        [
+          1,
+          513
+        ]
+      ],
+      "sha256": "39e3b9c13a7f3c5eb3440440b09570ed6247a1c415a30f34223ed260a828902c",
+      "failures": 0,
+      "cells": 33153,
+      "max_abs_error": 0.0,
+      "relative_l2_error": 0.0
+    },
+    {
+      "kind": "gemm_numerical",
+      "mode": "fp32_ieee",
+      "shape_mkn": [
+        257,
+        513,
+        129
+      ],
+      "seed": 7,
+      "pattern": "scaled_normal",
+      "layout": "contiguous",
+      "input_strides": [
+        [
+          513,
+          1
+        ],
+        [
+          129,
+          1
+        ]
+      ],
+      "sha256": "8b25f123973d14f1e3b54e66d0872b9c17f24e6a695a8b8f310788a65a51bd25",
+      "failures": 0,
+      "cells": 33153,
+      "max_abs_error": 1.2367808039925876e-06,
+      "relative_l2_error": 1.5225038557089306e-07
+    },
+    {
+      "kind": "gemm_numerical",
+      "mode": "fp32_ieee",
+      "shape_mkn": [
+        257,
+        513,
+        129
+      ],
+      "seed": 7,
+      "pattern": "scaled_normal",
+      "layout": "transposed",
+      "input_strides": [
+        [
+          1,
+          257
+        ],
+        [
+          1,
+          513
+        ]
+      ],
+      "sha256": "378bc89bfd7d244985b4dcf99a3b78013643c299d6fc966e938b45423defa623",
+      "failures": 0,
+      "cells": 33153,
+      "max_abs_error": 7.511674917637379e-07,
+      "relative_l2_error": 1.110717673849417e-07
+    },
+    {
+      "kind": "gemm_numerical",
+      "mode": "fp32_ieee",
+      "shape_mkn": [
+        257,
+        513,
+        129
+      ],
+      "seed": 2026,
+      "pattern": "dyadic",
+      "layout": "contiguous",
+      "input_strides": [
+        [
+          513,
+          1
+        ],
+        [
+          129,
+          1
+        ]
+      ],
+      "sha256": "23c5d06a5c7440537cab5bf5ba3203457991a4520ed920e9962b77737fbfa7ad",
+      "failures": 0,
+      "cells": 33153,
+      "max_abs_error": 0.0,
+      "relative_l2_error": 0.0
+    },
+    {
+      "kind": "gemm_numerical",
+      "mode": "fp32_ieee",
+      "shape_mkn": [
+        257,
+        513,
+        129
+      ],
+      "seed": 2026,
+      "pattern": "dyadic",
+      "layout": "transposed",
+      "input_strides": [
+        [
+          1,
+          257
+        ],
+        [
+          1,
+          513
+        ]
+      ],
+      "sha256": "722e602559e8a46911e16bcbd0ade3dead4593e526ab5350d15065e2063f9822",
+      "failures": 0,
+      "cells": 33153,
+      "max_abs_error": 0.0,
+      "relative_l2_error": 0.0
+    },
+    {
+      "kind": "gemm_numerical",
+      "mode": "fp32_ieee",
+      "shape_mkn": [
+        257,
+        513,
+        129
+      ],
+      "seed": 2026,
+      "pattern": "scaled_normal",
+      "layout": "contiguous",
+      "input_strides": [
+        [
+          513,
+          1
+        ],
+        [
+          129,
+          1
+        ]
+      ],
+      "sha256": "a84e0b5c7e278ec57a2d5d826c8e267e06d23b9dd8525cc00c7dba165e33dc3c",
+      "failures": 0,
+      "cells": 33153,
+      "max_abs_error": 1.1469979410705378e-06,
+      "relative_l2_error": 1.505128614247284e-07
+    },
+    {
+      "kind": "gemm_numerical",
+      "mode": "fp32_ieee",
+      "shape_mkn": [
+        257,
+        513,
+        129
+      ],
+      "seed": 2026,
+      "pattern": "scaled_normal",
+      "layout": "transposed",
+      "input_strides": [
+        [
+          1,
+          257
+        ],
+        [
+          1,
+          513
+        ]
+      ],
+      "sha256": "f58b3294989fb2de5c52a4ce9f06dba282c37c7128cba107269e3d943a0979dc",
+      "failures": 0,
+      "cells": 33153,
+      "max_abs_error": 8.488473999257451e-07,
+      "relative_l2_error": 1.1038126825576265e-07
+    },
+    {
+      "kind": "gemm_numerical",
+      "mode": "tf32_allowed",
+      "shape_mkn": [
+        32,
+        64,
+        48
+      ],
+      "seed": 7,
+      "pattern": "dyadic",
+      "layout": "contiguous",
+      "input_strides": [
+        [
+          64,
+          1
+        ],
+        [
+          48,
+          1
+        ]
+      ],
+      "sha256": "dea9b5d189f2232e47ecc9f002eeab9f62f288c88bd5042d0e8b19df9b8d3417",
+      "failures": 0,
+      "cells": 1536,
+      "max_abs_error": 0.0,
+      "relative_l2_error": 0.0
+    },
+    {
+      "kind": "gemm_numerical",
+      "mode": "tf32_allowed",
+      "shape_mkn": [
+        32,
+        64,
+        48
+      ],
+      "seed": 7,
+      "pattern": "dyadic",
+      "layout": "transposed",
+      "input_strides": [
+        [
+          1,
+          32
+        ],
+        [
+          1,
+          64
+        ]
+      ],
+      "sha256": "d2ec241028c4a4c9e9f850569ab16011039b957ae4c82902a61456483dc4f0ba",
+      "failures": 0,
+      "cells": 1536,
+      "max_abs_error": 0.0,
+      "relative_l2_error": 0.0
+    },
+    {
+      "kind": "gemm_numerical",
+      "mode": "tf32_allowed",
+      "shape_mkn": [
+        32,
+        64,
+        48
+      ],
+      "seed": 7,
+      "pattern": "scaled_normal",
+      "layout": "contiguous",
+      "input_strides": [
+        [
+          64,
+          1
+        ],
+        [
+          48,
+          1
+        ]
+      ],
+      "sha256": "4ed2c3e63f70acf792ca1c8f51e9c9d1fdd0a4d463dcb700bb5fd7437ae5d6b8",
+      "failures": 0,
+      "cells": 1536,
+      "max_abs_error": 0.0006193391521191194,
+      "relative_l2_error": 0.0003002941923379321
+    },
+    {
+      "kind": "gemm_numerical",
+      "mode": "tf32_allowed",
+      "shape_mkn": [
+        32,
+        64,
+        48
+      ],
+      "seed": 7,
+      "pattern": "scaled_normal",
+      "layout": "transposed",
+      "input_strides": [
+        [
+          1,
+          32
+        ],
+        [
+          1,
+          64
+        ]
+      ],
+      "sha256": "670b29bbfa0b75df7907b93c2ba42cc90c17259788c09f37b7b6ed4dbda9aef5",
+      "failures": 0,
+      "cells": 1536,
+      "max_abs_error": 0.0005233882925155808,
+      "relative_l2_error": 0.00029276225577943215
+    },
+    {
+      "kind": "gemm_numerical",
+      "mode": "tf32_allowed",
+      "shape_mkn": [
+        32,
+        64,
+        48
+      ],
+      "seed": 2026,
+      "pattern": "dyadic",
+      "layout": "contiguous",
+      "input_strides": [
+        [
+          64,
+          1
+        ],
+        [
+          48,
+          1
+        ]
+      ],
+      "sha256": "a45971575039ca48fef0bd43766bd8e90b20ea66db8f33e2d8a41d89c9f20509",
+      "failures": 0,
+      "cells": 1536,
+      "max_abs_error": 0.0,
+      "relative_l2_error": 0.0
+    },
+    {
+      "kind": "gemm_numerical",
+      "mode": "tf32_allowed",
+      "shape_mkn": [
+        32,
+        64,
+        48
+      ],
+      "seed": 2026,
+      "pattern": "dyadic",
+      "layout": "transposed",
+      "input_strides": [
+        [
+          1,
+          32
+        ],
+        [
+          1,
+          64
+        ]
+      ],
+      "sha256": "ec4dc35cefddff6b1e12c7423ca45bda5b4dafb9a6a0a2aec82ef8f439b47235",
+      "failures": 0,
+      "cells": 1536,
+      "max_abs_error": 0.0,
+      "relative_l2_error": 0.0
+    },
+    {
+      "kind": "gemm_numerical",
+      "mode": "tf32_allowed",
+      "shape_mkn": [
+        32,
+        64,
+        48
+      ],
+      "seed": 2026,
+      "pattern": "scaled_normal",
+      "layout": "contiguous",
+      "input_strides": [
+        [
+          64,
+          1
+        ],
+        [
+          48,
+          1
+        ]
+      ],
+      "sha256": "2ca5ee7f5899039c5cd7164526386ab7eb48b97d06b6b8ec46381974da292f8f",
+      "failures": 0,
+      "cells": 1536,
+      "max_abs_error": 0.0005410161048452489,
+      "relative_l2_error": 0.0002923736265668211
+    },
+    {
+      "kind": "gemm_numerical",
+      "mode": "tf32_allowed",
+      "shape_mkn": [
+        32,
+        64,
+        48
+      ],
+      "seed": 2026,
+      "pattern": "scaled_normal",
+      "layout": "transposed",
+      "input_strides": [
+        [
+          1,
+          32
+        ],
+        [
+          1,
+          64
+        ]
+      ],
+      "sha256": "d7e172c285636df590c74bf70f894f920ed3a55e51e9b7c7abd2f2f35f3d7613",
+      "failures": 0,
+      "cells": 1536,
+      "max_abs_error": 0.0005279978832565257,
+      "relative_l2_error": 0.0002893861469395137
+    },
+    {
+      "kind": "gemm_numerical",
+      "mode": "tf32_allowed",
+      "shape_mkn": [
+        127,
+        95,
+        65
+      ],
+      "seed": 7,
+      "pattern": "dyadic",
+      "layout": "contiguous",
+      "input_strides": [
+        [
+          95,
+          1
+        ],
+        [
+          65,
+          1
+        ]
+      ],
+      "sha256": "578f8c3b562539731608c386f5ff5bb924ac687d22a37758663a9ccc0877f460",
+      "failures": 0,
+      "cells": 8255,
+      "max_abs_error": 0.0,
+      "relative_l2_error": 0.0
+    },
+    {
+      "kind": "gemm_numerical",
+      "mode": "tf32_allowed",
+      "shape_mkn": [
+        127,
+        95,
+        65
+      ],
+      "seed": 7,
+      "pattern": "dyadic",
+      "layout": "transposed",
+      "input_strides": [
+        [
+          1,
+          127
+        ],
+        [
+          1,
+          95
+        ]
+      ],
+      "sha256": "b9dd88aa96a104ce4d0f90fd579717ce1338f0b9c5c70f87721d3db3642ee0a2",
+      "failures": 0,
+      "cells": 8255,
+      "max_abs_error": 0.0,
+      "relative_l2_error": 0.0
+    },
+    {
+      "kind": "gemm_numerical",
+      "mode": "tf32_allowed",
+      "shape_mkn": [
+        127,
+        95,
+        65
+      ],
+      "seed": 7,
+      "pattern": "scaled_normal",
+      "layout": "contiguous",
+      "input_strides": [
+        [
+          95,
+          1
+        ],
+        [
+          65,
+          1
+        ]
+      ],
+      "sha256": "02b965997d9564f333596ff22cc2aa1b73a553b278e63527e6fac7350aa7cb1d",
+      "failures": 0,
+      "cells": 8255,
+      "max_abs_error": 2.776160787920645e-07,
+      "relative_l2_error": 9.689725922745162e-08
+    },
+    {
+      "kind": "gemm_numerical",
+      "mode": "tf32_allowed",
+      "shape_mkn": [
+        127,
+        95,
+        65
+      ],
+      "seed": 7,
+      "pattern": "scaled_normal",
+      "layout": "transposed",
+      "input_strides": [
+        [
+          1,
+          127
+        ],
+        [
+          1,
+          95
+        ]
+      ],
+      "sha256": "392f10d1c860677a385444db5c45b843d4a96dc1f9b579172be7f6ac23e51634",
+      "failures": 0,
+      "cells": 8255,
+      "max_abs_error": 3.1326517690999367e-07,
+      "relative_l2_error": 9.607652301172207e-08
+    },
+    {
+      "kind": "gemm_numerical",
+      "mode": "tf32_allowed",
+      "shape_mkn": [
+        127,
+        95,
+        65
+      ],
+      "seed": 2026,
+      "pattern": "dyadic",
+      "layout": "contiguous",
+      "input_strides": [
+        [
+          95,
+          1
+        ],
+        [
+          65,
+          1
+        ]
+      ],
+      "sha256": "7c11961b1be28c36bcbc28fca426f5863683e775aa22e075a6f5095531fbddce",
+      "failures": 0,
+      "cells": 8255,
+      "max_abs_error": 0.0,
+      "relative_l2_error": 0.0
+    },
+    {
+      "kind": "gemm_numerical",
+      "mode": "tf32_allowed",
+      "shape_mkn": [
+        127,
+        95,
+        65
+      ],
+      "seed": 2026,
+      "pattern": "dyadic",
+      "layout": "transposed",
+      "input_strides": [
+        [
+          1,
+          127
+        ],
+        [
+          1,
+          95
+        ]
+      ],
+      "sha256": "8a61afb65a202cfb79f3a551d031a1518dd8225a86c5e7bf42c66ade041f88b1",
+      "failures": 0,
+      "cells": 8255,
+      "max_abs_error": 0.0,
+      "relative_l2_error": 0.0
+    },
+    {
+      "kind": "gemm_numerical",
+      "mode": "tf32_allowed",
+      "shape_mkn": [
+        127,
+        95,
+        65
+      ],
+      "seed": 2026,
+      "pattern": "scaled_normal",
+      "layout": "contiguous",
+      "input_strides": [
+        [
+          95,
+          1
+        ],
+        [
+          65,
+          1
+        ]
+      ],
+      "sha256": "e401fe31db08b5d010eb31b8d7515c86bde637bcfe7548b231c175bd570f5a56",
+      "failures": 0,
+      "cells": 8255,
+      "max_abs_error": 3.8200651109043804e-07,
+      "relative_l2_error": 9.857600856365265e-08
+    },
+    {
+      "kind": "gemm_numerical",
+      "mode": "tf32_allowed",
+      "shape_mkn": [
+        127,
+        95,
+        65
+      ],
+      "seed": 2026,
+      "pattern": "scaled_normal",
+      "layout": "transposed",
+      "input_strides": [
+        [
+          1,
+          127
+        ],
+        [
+          1,
+          95
+        ]
+      ],
+      "sha256": "025c14ba3456947d5039c97da2b25368056d51f78282004bc950289f5e8e429d",
+      "failures": 0,
+      "cells": 8255,
+      "max_abs_error": 3.9425634024148337e-07,
+      "relative_l2_error": 9.857737400977701e-08
+    },
+    {
+      "kind": "gemm_numerical",
+      "mode": "tf32_allowed",
+      "shape_mkn": [
+        256,
+        256,
+        256
+      ],
+      "seed": 7,
+      "pattern": "dyadic",
+      "layout": "contiguous",
+      "input_strides": [
+        [
+          256,
+          1
+        ],
+        [
+          256,
+          1
+        ]
+      ],
+      "sha256": "308848815caa00539af6cccf70cd81f85352966c78c60e381273603bf4a72728",
+      "failures": 0,
+      "cells": 65536,
+      "max_abs_error": 0.0,
+      "relative_l2_error": 0.0
+    },
+    {
+      "kind": "gemm_numerical",
+      "mode": "tf32_allowed",
+      "shape_mkn": [
+        256,
+        256,
+        256
+      ],
+      "seed": 7,
+      "pattern": "dyadic",
+      "layout": "transposed",
+      "input_strides": [
+        [
+          1,
+          256
+        ],
+        [
+          1,
+          256
+        ]
+      ],
+      "sha256": "4ced98129bfe7c913934bde5f46055efdadd4daece2dd750fe247d61ca258701",
+      "failures": 0,
+      "cells": 65536,
+      "max_abs_error": 0.0,
+      "relative_l2_error": 0.0
+    },
+    {
+      "kind": "gemm_numerical",
+      "mode": "tf32_allowed",
+      "shape_mkn": [
+        256,
+        256,
+        256
+      ],
+      "seed": 7,
+      "pattern": "scaled_normal",
+      "layout": "contiguous",
+      "input_strides": [
+        [
+          256,
+          1
+        ],
+        [
+          256,
+          1
+        ]
+      ],
+      "sha256": "50375afa9568d40f3f2d61672ff819e9b21c2fdccbee7fbfee8ae267c7027a1b",
+      "failures": 0,
+      "cells": 65536,
+      "max_abs_error": 0.0014127593686844575,
+      "relative_l2_error": 0.0002945047666746046
+    },
+    {
+      "kind": "gemm_numerical",
+      "mode": "tf32_allowed",
+      "shape_mkn": [
+        256,
+        256,
+        256
+      ],
+      "seed": 7,
+      "pattern": "scaled_normal",
+      "layout": "transposed",
+      "input_strides": [
+        [
+          1,
+          256
+        ],
+        [
+          1,
+          256
+        ]
+      ],
+      "sha256": "4908f7861184a153cb8db759af32d30919e3d9303c2a00ee075f9dff4f77cd5c",
+      "failures": 0,
+      "cells": 65536,
+      "max_abs_error": 0.0012521268272771557,
+      "relative_l2_error": 0.0002959682427636825
+    },
+    {
+      "kind": "gemm_numerical",
+      "mode": "tf32_allowed",
+      "shape_mkn": [
+        256,
+        256,
+        256
+      ],
+      "seed": 2026,
+      "pattern": "dyadic",
+      "layout": "contiguous",
+      "input_strides": [
+        [
+          256,
+          1
+        ],
+        [
+          256,
+          1
+        ]
+      ],
+      "sha256": "1f44fe848d732fb6073dd1933eb57c6cfb11193de91fe94e4f57c248beff1143",
+      "failures": 0,
+      "cells": 65536,
+      "max_abs_error": 0.0,
+      "relative_l2_error": 0.0
+    },
+    {
+      "kind": "gemm_numerical",
+      "mode": "tf32_allowed",
+      "shape_mkn": [
+        256,
+        256,
+        256
+      ],
+      "seed": 2026,
+      "pattern": "dyadic",
+      "layout": "transposed",
+      "input_strides": [
+        [
+          1,
+          256
+        ],
+        [
+          1,
+          256
+        ]
+      ],
+      "sha256": "01b40b54389ca95490a6acdeb837f79d9cb558047f63890bc23ccce98464a4c4",
+      "failures": 0,
+      "cells": 65536,
+      "max_abs_error": 0.0,
+      "relative_l2_error": 0.0
+    },
+    {
+      "kind": "gemm_numerical",
+      "mode": "tf32_allowed",
+      "shape_mkn": [
+        256,
+        256,
+        256
+      ],
+      "seed": 2026,
+      "pattern": "scaled_normal",
+      "layout": "contiguous",
+      "input_strides": [
+        [
+          256,
+          1
+        ],
+        [
+          256,
+          1
+        ]
+      ],
+      "sha256": "ccb234b14773e74d8649a0c2157d6379cb8a02beaf112f3dd70edef4fa13fbfd",
+      "failures": 0,
+      "cells": 65536,
+      "max_abs_error": 0.001371099187000735,
+      "relative_l2_error": 0.00029334294457757803
+    },
+    {
+      "kind": "gemm_numerical",
+      "mode": "tf32_allowed",
+      "shape_mkn": [
+        256,
+        256,
+        256
+      ],
+      "seed": 2026,
+      "pattern": "scaled_normal",
+      "layout": "transposed",
+      "input_strides": [
+        [
+          1,
+          256
+        ],
+        [
+          1,
+          256
+        ]
+      ],
+      "sha256": "4a3651adb8cbfd32198e8000b2a8177c1ffb2c54aba4134e69026e9c484aebb1",
+      "failures": 0,
+      "cells": 65536,
+      "max_abs_error": 0.0014424143288169766,
+      "relative_l2_error": 0.00029410790796370075
+    },
+    {
+      "kind": "gemm_numerical",
+      "mode": "tf32_allowed",
+      "shape_mkn": [
+        257,
+        513,
+        129
+      ],
+      "seed": 7,
+      "pattern": "dyadic",
+      "layout": "contiguous",
+      "input_strides": [
+        [
+          513,
+          1
+        ],
+        [
+          129,
+          1
+        ]
+      ],
+      "sha256": "bef846fc200369013103e7afdd29228ee898a51f444cf6e4fc48dc3f21206d15",
+      "failures": 0,
+      "cells": 33153,
+      "max_abs_error": 0.0,
+      "relative_l2_error": 0.0
+    },
+    {
+      "kind": "gemm_numerical",
+      "mode": "tf32_allowed",
+      "shape_mkn": [
+        257,
+        513,
+        129
+      ],
+      "seed": 7,
+      "pattern": "dyadic",
+      "layout": "transposed",
+      "input_strides": [
+        [
+          1,
+          257
+        ],
+        [
+          1,
+          513
+        ]
+      ],
+      "sha256": "39e3b9c13a7f3c5eb3440440b09570ed6247a1c415a30f34223ed260a828902c",
+      "failures": 0,
+      "cells": 33153,
+      "max_abs_error": 0.0,
+      "relative_l2_error": 0.0
+    },
+    {
+      "kind": "gemm_numerical",
+      "mode": "tf32_allowed",
+      "shape_mkn": [
+        257,
+        513,
+        129
+      ],
+      "seed": 7,
+      "pattern": "scaled_normal",
+      "layout": "contiguous",
+      "input_strides": [
+        [
+          513,
+          1
+        ],
+        [
+          129,
+          1
+        ]
+      ],
+      "sha256": "f6cf45c9c2ea787363666ba85eaad566a46e5766836c8212a7ec25cf9da5a401",
+      "failures": 0,
+      "cells": 33153,
+      "max_abs_error": 0.0018277329894966776,
+      "relative_l2_error": 0.00029246631612004763
+    },
+    {
+      "kind": "gemm_numerical",
+      "mode": "tf32_allowed",
+      "shape_mkn": [
+        257,
+        513,
+        129
+      ],
+      "seed": 7,
+      "pattern": "scaled_normal",
+      "layout": "transposed",
+      "input_strides": [
+        [
+          1,
+          257
+        ],
+        [
+          1,
+          513
+        ]
+      ],
+      "sha256": "d56bd4abdbe3a775829a99a3775a0d4dd71805cf294aa392d313534d5456604d",
+      "failures": 0,
+      "cells": 33153,
+      "max_abs_error": 0.00201035376204306,
+      "relative_l2_error": 0.0002951332348782088
+    },
+    {
+      "kind": "gemm_numerical",
+      "mode": "tf32_allowed",
+      "shape_mkn": [
+        257,
+        513,
+        129
+      ],
+      "seed": 2026,
+      "pattern": "dyadic",
+      "layout": "contiguous",
+      "input_strides": [
+        [
+          513,
+          1
+        ],
+        [
+          129,
+          1
+        ]
+      ],
+      "sha256": "23c5d06a5c7440537cab5bf5ba3203457991a4520ed920e9962b77737fbfa7ad",
+      "failures": 0,
+      "cells": 33153,
+      "max_abs_error": 0.0,
+      "relative_l2_error": 0.0
+    },
+    {
+      "kind": "gemm_numerical",
+      "mode": "tf32_allowed",
+      "shape_mkn": [
+        257,
+        513,
+        129
+      ],
+      "seed": 2026,
+      "pattern": "dyadic",
+      "layout": "transposed",
+      "input_strides": [
+        [
+          1,
+          257
+        ],
+        [
+          1,
+          513
+        ]
+      ],
+      "sha256": "722e602559e8a46911e16bcbd0ade3dead4593e526ab5350d15065e2063f9822",
+      "failures": 0,
+      "cells": 33153,
+      "max_abs_error": 0.0,
+      "relative_l2_error": 0.0
+    },
+    {
+      "kind": "gemm_numerical",
+      "mode": "tf32_allowed",
+      "shape_mkn": [
+        257,
+        513,
+        129
+      ],
+      "seed": 2026,
+      "pattern": "scaled_normal",
+      "layout": "contiguous",
+      "input_strides": [
+        [
+          513,
+          1
+        ],
+        [
+          129,
+          1
+        ]
+      ],
+      "sha256": "0c26d571ed2a45023c288878c869e795b75869f21a98ca22ef160330b9d7d3de",
+      "failures": 0,
+      "cells": 33153,
+      "max_abs_error": 0.0018883645828702833,
+      "relative_l2_error": 0.00029162628890246073
+    },
+    {
+      "kind": "gemm_numerical",
+      "mode": "tf32_allowed",
+      "shape_mkn": [
+        257,
+        513,
+        129
+      ],
+      "seed": 2026,
+      "pattern": "scaled_normal",
+      "layout": "transposed",
+      "input_strides": [
+        [
+          1,
+          257
+        ],
+        [
+          1,
+          513
+        ]
+      ],
+      "sha256": "2297d5b389674a0e0ceb6a0c181f91e58b636bf480423fa4d939735945a38628",
+      "failures": 0,
+      "cells": 33153,
+      "max_abs_error": 0.0016206765945594448,
+      "relative_l2_error": 0.0002928034286898145
+    },
+    {
+      "kind": "flash_attention",
+      "dtype": "torch.float16",
+      "shape": [
+        2,
+        4,
+        127,
+        64
+      ],
+      "backend": "FLASH_ATTENTION forced",
+      "causal": true,
+      "checks": [
+        {
+          "failures": 0,
+          "cells": 65024,
+          "max_abs_error": 0.00044858213023268867,
+          "relative_l2_error": 0.000246334930750171
+        },
+        {
+          "failures": 0,
+          "cells": 65024,
+          "max_abs_error": 0.0003043601110332972,
+          "relative_l2_error": 0.0003095425384167568
+        },
+        {
+          "failures": 0,
+          "cells": 65024,
+          "max_abs_error": 0.00028267850211127765,
+          "relative_l2_error": 0.000306663316660716
+        },
+        {
+          "failures": 0,
+          "cells": 65024,
+          "max_abs_error": 0.0012443294902491076,
+          "relative_l2_error": 0.0002758553080663269
+        }
+      ],
+      "forward_atol": 0.0005,
+      "forward_rtol": 0.005,
+      "gradient_atol": 0.002,
+      "gradient_rtol": 0.02,
+      "forward_times_ms": [
+        0.008806400001049042,
+        0.0086496002972126,
+        0.009059199690818786,
+        0.008460800349712371,
+        0.00864799991250038
+      ],
+      "median_forward_ms": 0.0086496002972126,
+      "output_sha256": "baf2072c85f9dfc43904dbdc52026f697966b5505b9b78a1b7cce845340ed203"
+    },
+    {
+      "kind": "flash_attention",
+      "dtype": "torch.float16",
+      "shape": [
+        2,
+        4,
+        256,
+        64
+      ],
+      "backend": "FLASH_ATTENTION forced",
+      "causal": true,
+      "checks": [
+        {
+          "failures": 0,
+          "cells": 131072,
+          "max_abs_error": 0.00048148113623835975,
+          "relative_l2_error": 0.0002467838225648698
+        },
+        {
+          "failures": 0,
+          "cells": 131072,
+          "max_abs_error": 0.00024529671255882346,
+          "relative_l2_error": 0.00030938531845350545
+        },
+        {
+          "failures": 0,
+          "cells": 131072,
+          "max_abs_error": 0.00039632370941844464,
+          "relative_l2_error": 0.00031970968401842317
+        },
+        {
+          "failures": 0,
+          "cells": 131072,
+          "max_abs_error": 0.0012482549567716106,
+          "relative_l2_error": 0.0002838386842421163
+        }
+      ],
+      "forward_atol": 0.0005,
+      "forward_rtol": 0.005,
+      "gradient_atol": 0.002,
+      "gradient_rtol": 0.02,
+      "forward_times_ms": [
+        0.009164799749851228,
+        0.008703999966382981,
+        0.008703999966382981,
+        0.008739200234413148,
+        0.008703999966382981
+      ],
+      "median_forward_ms": 0.008703999966382981,
+      "output_sha256": "6b876b1f05df9e7c526b685624d21501e16258b1a87c7322819cf85ca20b3944"
+    },
+    {
+      "kind": "synthetic_mlp_training",
+      "dtype": "torch.float16",
+      "steps": 50,
+      "losses": [
+        0.04016169160604477,
+        0.03955727815628052,
+        0.03897404670715332,
+        0.03840808570384979,
+        0.03786218911409378,
+        0.037332624197006226,
+        0.036823570728302,
+        0.03632744401693344,
+        0.03584546968340874,
+        0.035379812121391296,
+        0.03492838889360428,
+        0.034490540623664856,
+        0.03406431898474693,
+        0.03364989906549454,
+        0.033246733248233795,
+        0.032855190336704254,
+        0.03247286379337311,
+        0.03210018575191498,
+        0.031737811863422394,
+        0.031383927911520004,
+        0.031039820984005928,
+        0.030702365562319756,
+        0.030374381691217422,
+        0.0300515815615654,
+        0.029739437624812126,
+        0.029431816190481186,
+        0.029131483286619186,
+        0.02883671410381794,
+        0.02854858711361885,
+        0.0282672718167305,
+        0.027990825474262238,
+        0.027719782665371895,
+        0.027454504743218422,
+        0.027194194495677948,
+        0.02693881280720234,
+        0.026688477024435997,
+        0.02644275687634945,
+        0.026199938729405403,
+        0.025964034721255302,
+        0.025730419903993607,
+        0.025500589981675148,
+        0.025274837389588356,
+        0.025053920224308968,
+        0.024835292249917984,
+        0.024619461968541145,
+        0.024408645927906036,
+        0.024200525134801865,
+        0.02399487793445587,
+        0.023793239146471024,
+        0.02359408512711525
+      ],
+      "step_times_ms": [
+        113.44998168945312,
+        1.1392639875411987,
+        0.7614399790763855,
+        1.2548160552978516,
+        0.8055679798126221,
+        0.7502400279045105,
+        0.6759359836578369,
+        0.8804799914360046,
+        0.6387519836425781,
+        0.8212800025939941,
+        0.7180799841880798,
+        0.7542399764060974,
+        0.5911359786987305,
+        0.6985920071601868,
+        0.659775972366333,
+        0.5936959981918335,
+        0.7006080150604248,
+        0.55103999376297,
+        0.6538879871368408,
+        0.5300160050392151,
+        0.46537598967552185,
+        0.487199991941452,
+        0.5273600220680237,
+        0.46000000834465027,
+        0.5757439732551575,
+        0.4639360010623932,
+        0.9405760169029236,
+        0.9564800262451172,
+        0.5424000024795532,
+        0.47222399711608887,
+        0.5478399991989136,
+        0.5111039876937866,
+        0.5870400071144104,
+        0.43084800243377686,
+        0.4392319917678833,
+        0.5770879983901978,
+        0.46399998664855957,
+        0.44255998730659485,
+        0.45286399126052856,
+        0.5534719824790955,
+        0.4734399914741516,
+        0.6100479960441589,
+        0.48259198665618896,
+        0.47654399275779724,
+        0.5742080211639404,
+        0.46832001209259033,
+        0.5543680191040039,
+        0.5881919860839844,
+        0.5797119736671448,
+        0.6495680212974548
+      ],
+      "gradient_checks": [
+        {
+          "failures": 0,
+          "cells": 524288,
+          "max_abs_error": 9.303606448710188e-07,
+          "relative_l2_error": 0.0028226963391073273
+        },
+        {
+          "failures": 0,
+          "cells": 1024,
+          "max_abs_error": 5.567846478058487e-07,
+          "relative_l2_error": 0.001080288776600614
+        },
+        {
+          "failures": 0,
+          "cells": 131072,
+          "max_abs_error": 7.990937658886119e-07,
+          "relative_l2_error": 0.00051906285886736
+        },
+        {
+          "failures": 0,
+          "cells": 128,
+          "max_abs_error": 1.0849837173356087e-06,
+          "relative_l2_error": 0.0003043710384044527
+        }
+      ],
+      "final_weights_sha256": [
+        "c1f88e37125135c5962134d6bd4dee54ee5a428641644053c4ab8133b13778d7",
+        "af564fb72a5189bc4b55af87285021882a8e6875344545109787ec5c20ceb988",
+        "00aa399d54dc0eb39aa53d6087566525e6ef86a55821f27702d96f7804730573",
+        "48c34975de504fd45c948ecc9a77e89997e935bcdb85d99eec82468a41e50024"
+      ],
+      "timing_scope": "includes validation synchronization; not application throughput"
+    },
+    {
+      "kind": "flash_attention",
+      "dtype": "torch.bfloat16",
+      "shape": [
+        2,
+        4,
+        127,
+        64
+      ],
+      "backend": "FLASH_ATTENTION forced",
+      "causal": true,
+      "checks": [
+        {
+          "failures": 0,
+          "cells": 65024,
+          "max_abs_error": 0.003512107189090674,
+          "relative_l2_error": 0.0019700941926239558
+        },
+        {
+          "failures": 0,
+          "cells": 65024,
+          "max_abs_error": 0.0020710390033352177,
+          "relative_l2_error": 0.0024739441944109553
+        },
+        {
+          "failures": 0,
+          "cells": 65024,
+          "max_abs_error": 0.002063730627723359,
+          "relative_l2_error": 0.0024592735849092956
+        },
+        {
+          "failures": 0,
+          "cells": 65024,
+          "max_abs_error": 0.010439030270196437,
+          "relative_l2_error": 0.002270230235496829
+        }
+      ],
+      "forward_atol": 0.004,
+      "forward_rtol": 0.03,
+      "gradient_atol": 0.01,
+      "gradient_rtol": 0.08,
+      "forward_times_ms": [
+        0.009062399715185165,
+        0.008857599645853042,
+        0.008795200288295746,
+        0.009204799681901932,
+        0.008755200356245042
+      ],
+      "median_forward_ms": 0.008857599645853042,
+      "output_sha256": "ae2b930b738acd7b007b2a3de030e9f8c5cecf55bb0e5b918dd7e45481629140"
+    },
+    {
+      "kind": "flash_attention",
+      "dtype": "torch.bfloat16",
+      "shape": [
+        2,
+        4,
+        256,
+        64
+      ],
+      "backend": "FLASH_ATTENTION forced",
+      "causal": true,
+      "checks": [
+        {
+          "failures": 0,
+          "cells": 131072,
+          "max_abs_error": 0.003916735062213128,
+          "relative_l2_error": 0.0019734772476809248
+        },
+        {
+          "failures": 0,
+          "cells": 131072,
+          "max_abs_error": 0.0024195410070801115,
+          "relative_l2_error": 0.002469226080514993
+        },
+        {
+          "failures": 0,
+          "cells": 131072,
+          "max_abs_error": 0.0037210424396889596,
+          "relative_l2_error": 0.0024916166227966926
+        },
+        {
+          "failures": 0,
+          "cells": 131072,
+          "max_abs_error": 0.011850905592110106,
+          "relative_l2_error": 0.0022632795400003053
+        }
+      ],
+      "forward_atol": 0.004,
+      "forward_rtol": 0.03,
+      "gradient_atol": 0.01,
+      "gradient_rtol": 0.08,
+      "forward_times_ms": [
+        0.010027199983596802,
+        0.009915199875831605,
+        0.010444799810647965,
+        0.009984000027179718,
+        0.009924799948930741
+      ],
+      "median_forward_ms": 0.009984000027179718,
+      "output_sha256": "b9b654ce32134c73a046870f89134a0b62b96bbfbc9f7148a51ea0db2082eff9"
+    },
+    {
+      "kind": "synthetic_mlp_training",
+      "dtype": "torch.bfloat16",
+      "steps": 50,
+      "losses": [
+        0.04016684740781784,
+        0.039919413626194,
+        0.039676129817962646,
+        0.03944523632526398,
+        0.039218075573444366,
+        0.0389997772872448,
+        0.0387771800160408,
+        0.03857022523880005,
+        0.03836371749639511,
+        0.03816898912191391,
+        0.03796052187681198,
+        0.03778234124183655,
+        0.03760116174817085,
+        0.03742344677448273,
+        0.037244439125061035,
+        0.03706548362970352,
+        0.03690475597977638,
+        0.036749131977558136,
+        0.03658738359808922,
+        0.036434851586818695,
+        0.036283351480960846,
+        0.036128681153059006,
+        0.035979319363832474,
+        0.03582828864455223,
+        0.0356927216053009,
+        0.035553451627492905,
+        0.0354185476899147,
+        0.03528345376253128,
+        0.03515828773379326,
+        0.03502678871154785,
+        0.03490014746785164,
+        0.034773800522089005,
+        0.03464987874031067,
+        0.0345320999622345,
+        0.03441945090889931,
+        0.0343087799847126,
+        0.03419364243745804,
+        0.03407943993806839,
+        0.033970702439546585,
+        0.033858805894851685,
+        0.033755332231521606,
+        0.03364763408899307,
+        0.033542826771736145,
+        0.03344433754682541,
+        0.033340342342853546,
+        0.03324301540851593,
+        0.033148400485515594,
+        0.0330454483628273,
+        0.0329507440328598,
+        0.032860107719898224
+      ],
+      "step_times_ms": [
+        53.46303939819336,
+        0.8372480273246765,
+        0.7411199808120728,
+        0.9165120124816895,
+        0.7354559898376465,
+        0.7212160229682922,
+        0.5974400043487549,
+        0.6201919913291931,
+        0.4874880015850067,
+        0.5825920104980469,
+        0.6830080151557922,
+        0.617792010307312,
+        0.8022080063819885,
+        0.7908160090446472,
+        0.7390720248222351,
+        0.72816002368927,
+        0.569920003414154,
+        0.6402879953384399,
+        0.7120959758758545,
+        0.7003520131111145,
+        0.6747519969940186,
+        0.6214079856872559,
+        0.604416012763977,
+        0.6589440107345581,
+        0.5497599840164185,
+        0.57532799243927,
+        0.5440959930419922,
+        1.0152640342712402,
+        0.7278720140457153,
+        0.600928008556366,
+        0.5855680108070374,
+        0.6967359781265259,
+        0.5693439841270447,
+        0.6400319933891296,
+        0.7197120189666748,
+        0.7328320145606995,
+        0.712224006652832,
+        0.6651520133018494,
+        0.7365760207176208,
+        0.8119360208511353,
+        0.7041919827461243,
+        0.7739520072937012,
+        0.780672013759613,
+        0.746399998664856,
+        0.76009601354599,
+        0.7088000178337097,
+        0.7626240253448486,
+        0.7135040163993835,
+        0.6930559873580933,
+        0.8405439853668213
+      ],
+      "gradient_checks": [
+        {
+          "failures": 0,
+          "cells": 524288,
+          "max_abs_error": 1.9696740218727604e-06,
+          "relative_l2_error": 0.004476693913953674
+        },
+        {
+          "failures": 0,
+          "cells": 1024,
+          "max_abs_error": 1.5460687043790475e-06,
+          "relative_l2_error": 0.002466521166346683
+        },
+        {
+          "failures": 0,
+          "cells": 131072,
+          "max_abs_error": 5.93817310866546e-06,
+          "relative_l2_error": 0.003818289579013598
+        },
+        {
+          "failures": 0,
+          "cells": 128,
+          "max_abs_error": 7.30125196578453e-06,
+          "relative_l2_error": 0.002326826336405325
+        }
+      ],
+      "final_weights_sha256": [
+        "8c35ccd8fe237e153fcc740efb122dea2e529c522e9aae13e6873bc23dcff35d",
+        "9d8d50accf2106cef80898b604e53f000a56f5999ffdc9e4b76ae033009df785",
+        "31b4b678bb4adca970f77e2cc8a1c7ddbb8ed36d690888b8ea218b738446aa65",
+        "d08db8baab9eb90a21ef42ce4d93f7267b1ccd7d6ce2424601d97da5ff29b42b"
+      ],
+      "timing_scope": "includes validation synchronization; not application throughput"
+    }
+  ]
+}

@@ -1,0 +1,24 @@
+make: Entering directory 'WORKSPACE/work/validation-build/6.8.0-142-generic'
+make -C "/usr/src/linux-headers-6.8.0-142-generic" M="WORKSPACE/work/validation-build/6.8.0-142-generic" modules
+make[1]: Entering directory '/usr/src/linux-headers-6.8.0-142-generic'
+warning: the compiler differs from the one used to build the kernel
+  The kernel was built by: x86_64-linux-gnu-gcc-13 (Ubuntu 13.3.0-6ubuntu2~24.04.1) 13.3.0
+  You are using:           gcc-13 (Ubuntu 13.3.0-6ubuntu2~24.04.1) 13.3.0
+  CC [M]  WORKSPACE/work/validation-build/6.8.0-142-generic/main.o
+  CC [M]  WORKSPACE/work/validation-build/6.8.0-142-generic/gfw_eval.o
+  CC [M]  WORKSPACE/work/validation-build/6.8.0-142-generic/prep_610.o
+  CC [M]  WORKSPACE/work/validation-build/6.8.0-142-generic/layout_610.o
+  CC [M]  WORKSPACE/work/validation-build/6.8.0-142-generic/vbios_610.o
+  CC [M]  WORKSPACE/work/validation-build/6.8.0-142-generic/recipes.o
+  CC [M]  WORKSPACE/work/validation-build/6.8.0-142-generic/payload.o
+  CC [M]  WORKSPACE/work/validation-build/6.8.0-142-generic/firmware_610.o
+  CC [M]  WORKSPACE/work/validation-build/6.8.0-142-generic/falcon.o
+  CC [M]  WORKSPACE/work/validation-build/6.8.0-142-generic/unlock_610.o
+  LD [M]  WORKSPACE/work/validation-build/6.8.0-142-generic/gpu_unlock.o
+  MODPOST WORKSPACE/work/validation-build/6.8.0-142-generic/Module.symvers
+  CC [M]  WORKSPACE/work/validation-build/6.8.0-142-generic/gpu_unlock.mod.o
+  LD [M]  WORKSPACE/work/validation-build/6.8.0-142-generic/gpu_unlock.ko
+  BTF [M] WORKSPACE/work/validation-build/6.8.0-142-generic/gpu_unlock.ko
+Skipping BTF generation for WORKSPACE/work/validation-build/6.8.0-142-generic/gpu_unlock.ko due to unavailability of vmlinux
+make[1]: Leaving directory '/usr/src/linux-headers-6.8.0-142-generic'
+make: Leaving directory 'WORKSPACE/work/validation-build/6.8.0-142-generic'

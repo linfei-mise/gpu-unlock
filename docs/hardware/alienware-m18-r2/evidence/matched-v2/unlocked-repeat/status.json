@@ -1,0 +1,97 @@
+{
+  "complete": true,
+  "state": "unlocked",
+  "kernel": "6.8.0-147-generic",
+  "driver": "580.178.04",
+  "gpu": "NVIDIA GeForce RTX 4090 Laptop GPU",
+  "power_limit": "[N/A]",
+  "rtd3": 0,
+  "clock_policy": "unchanged dynamic clocks; desktop active",
+  "manifest": {
+    "nvcc": "nvcc: NVIDIA (R) Cuda compiler driver\nCopyright (c) 2005-2025 NVIDIA Corporation\nBuilt on Wed_Aug_20_01:58:59_PM_PDT_2025\nCuda compilation tools, release 13.0, V13.0.88\nBuild cuda_13.0.r13.0/compiler.36424714_0",
+    "vendor": {
+      "repository": "https://github.com/JustAResearcher/gpu-unlock-ada",
+      "commit": "d28c485418c3d9d034cd4bac19200bc33dd3453b",
+      "files": {
+        "mma_bench.cu": {
+          "path": "diagnostics/bench/mma_bench.cu",
+          "sha256": "7a02decd30c017ec05b61d25c34cf46958242ceeed65852c31ea0736dbdefca4"
+        },
+        "validate_gemm.cu": {
+          "path": "diagnostics/bench/validate_gemm.cu",
+          "sha256": "9bebdbd5fc0975ec6f48c0356f51c4218dd6768cc81eff107dfb5448f10e3c69"
+        },
+        "gemm_inputs.h": {
+          "path": "diagnostics/bench/gemm_inputs.h",
+          "sha256": "c6005990cbc8ebc584e46ceca6b04a86213bd8399bb59bad3881a9c3b86a436d"
+        },
+        "bench_args.h": {
+          "path": "diagnostics/bench/bench_args.h",
+          "sha256": "bd548217d69e262df0dc682b142bbda7f32fb6061fcdbe448fa3882ddfb13400"
+        },
+        "gemm_bench.cu": {
+          "path": "docs/evidence/rtx4090-pr1-stock/gemm_bench.cu",
+          "sha256": "c35ec706f9587b9749bf369a35d4dfca9e88c666c4582726490e0138cdd6e240"
+        },
+        "tensor_modes_issue.cu": {
+          "path": "diagnostics/bench/tensor_modes_issue.cu",
+          "sha256": "46cc852ec15ba2d12a259d7698e8fcd2104dfb07a5947a38d46c7bd6b5f5462f"
+        },
+        "tensor_modes_driver_runner.py": {
+          "path": "diagnostics/bench/tensor_modes_driver_runner.py",
+          "sha256": "b8dc74765959a9102f5bda7c396ea7457b5669dcefa4fbaf326bc3046d2920aa"
+        },
+        "read_sm_rates.py": {
+          "path": "tools/read_sm_rates.py",
+          "sha256": "1e5ef78dfcbe8ce5960fd81c81eb1ede86f08babbb8715d7e40ac1e8f9329421"
+        }
+      }
+    },
+    "binaries": {
+      "mma_bench": "df01050ca822300b8b651be8d4fa380e6cdb29da6f904d08c6f3da630b47b7c4",
+      "validate_gemm": "97748bc52e63d03d633b9b96a1b54fa0d73175ed5dd44ffaa80cb10529b8333a",
+      "gemm_bench": "853d84149f08a6561392fd4d12a8c2410c4a330b7b874d13431aaf851aa1dce7",
+      "tensor_modes_issue_sm89.cubin": "e90cc66d2af181e1741ab8845bcb192b63e1d1ad37a23d3fca2108d7bb8565ca"
+    }
+  },
+  "source_sha256": {
+    "validate_torch.py": "fa43aec5b72f6ab554755fcef4f28cb906ec98e47a8afb9217c58aafb1044087",
+    "build.py": "4446e5be8266cf36163d92a656ee65b2557d7e985b0d02fb0c3c2d220c5c67df",
+    "collect.py": "c9fc9e99b7777e98c08914c2f04e263c7e79c010bbffe0d74d7f9dae3f606ce6"
+  },
+  "rates_before": {
+    "gpu": "NVIDIA GeForce RTX 4090 Laptop GPU",
+    "command": "0x20801230",
+    "rates": {
+      "imla0": 0,
+      "fmla16": 0,
+      "dp": 0,
+      "fmla32": 0,
+      "ffma": 0,
+      "imla1": 0,
+      "imla2": 0,
+      "imla3": 0,
+      "imla4": 0
+    },
+    "meaning": "0=full; 1=half; 2=quarter; higher values are further reductions",
+    "hardware_changes": false
+  },
+  "rates_after": {
+    "gpu": "NVIDIA GeForce RTX 4090 Laptop GPU",
+    "command": "0x20801230",
+    "rates": {
+      "imla0": 0,
+      "fmla16": 0,
+      "dp": 0,
+      "fmla32": 0,
+      "ffma": 0,
+      "imla1": 0,
+      "imla2": 0,
+      "imla3": 0,
+      "imla4": 0
+    },
+    "meaning": "0=full; 1=half; 2=quarter; higher values are further reductions",
+    "hardware_changes": false
+  },
+  "kernel_gpu_errors": 0
+}

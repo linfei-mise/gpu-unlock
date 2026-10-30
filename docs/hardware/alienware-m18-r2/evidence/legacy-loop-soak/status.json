@@ -1,0 +1,12 @@
+{
+  "complete": true,
+  "duration_target_s": 600,
+  "temperature_stop_c": 83,
+  "cycles": 117,
+  "gemm_cases_passed": 702,
+  "seeded_cases_passed": 702,
+  "max_temperature_c": 62.0,
+  "max_power_w": 131.69,
+  "checks": [],
+  "elapsed_s": 600.93
+}

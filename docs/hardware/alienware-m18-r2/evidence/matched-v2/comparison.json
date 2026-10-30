@@ -1,0 +1,3590 @@
+{
+  "complete": true,
+  "run_order": [
+    "unlocked",
+    "stock-rtd3off",
+    "unlocked-repeat"
+  ],
+  "matching_fields": [
+    "manifest",
+    "source_sha256",
+    "kernel",
+    "driver",
+    "gpu",
+    "power_limit",
+    "rtd3",
+    "clock_policy"
+  ],
+  "rate_selectors_fmla32_imla2_imla4": [
+    0,
+    1,
+    0
+  ],
+  "mma_best_Top_s": {
+    "f16/f16": {
+      "by_run": {
+        "unlocked": 166.7,
+        "stock-rtd3off": 169.5,
+        "unlocked-repeat": 170.3
+      },
+      "unlocked_change_pct_range": [
+        -1.651917404129799,
+        0.4719764011799521
+      ]
+    },
+    "f16/f32": {
+      "by_run": {
+        "unlocked": 170.0,
+        "stock-rtd3off": 85.1,
+        "unlocked-repeat": 170.6
+      },
+      "unlocked_change_pct_range": [
+        99.76498237367804,
+        100.47003525264398
+      ]
+    },
+    "bf16/f32": {
+      "by_run": {
+        "unlocked": 169.6,
+        "stock-rtd3off": 84.3,
+        "unlocked-repeat": 170.1
+      },
+      "unlocked_change_pct_range": [
+        101.18623962040334,
+        101.77935943060498
+      ]
+    },
+    "s8/s32": {
+      "by_run": {
+        "unlocked": 337.4,
+        "stock-rtd3off": 339.3,
+        "unlocked-repeat": 337.4
+      },
+      "unlocked_change_pct_range": [
+        -0.559976422045394,
+        -0.559976422045394
+      ]
+    },
+    "fp8/e4m3": {
+      "by_run": {
+        "unlocked": 336.9,
+        "stock-rtd3off": 166.9,
+        "unlocked-repeat": 337.2
+      },
+      "unlocked_change_pct_range": [
+        101.85739964050326,
+        102.03714799281008
+      ]
+    },
+    "dp4a": {
+      "by_run": {
+        "unlocked": 84.4,
+        "stock-rtd3off": 83.9,
+        "unlocked-repeat": 83.0
+      },
+      "unlocked_change_pct_range": [
+        -1.0727056019070424,
+        0.5959475566150285
+      ]
+    },
+    "ffma": {
+      "by_run": {
+        "unlocked": 40.4,
+        "stock-rtd3off": 40.2,
+        "unlocked-repeat": 42.0
+      },
+      "unlocked_change_pct_range": [
+        0.4975124378109319,
+        4.477611940298498
+      ]
+    }
+  },
+  "gemm_median_TF_s": [
+    {
+      "mode": "FP16/FP32",
+      "n": 1024,
+      "by_run": {
+        "unlocked": 102.80944,
+        "stock-rtd3off": 63.743221,
+        "unlocked-repeat": 102.888255
+      },
+      "unlocked_change_pct_range": [
+        61.28686060593016,
+        61.41050512649808
+      ]
+    },
+    {
+      "mode": "BF16/FP32",
+      "n": 1024,
+      "by_run": {
+        "unlocked": 102.80157,
+        "stock-rtd3off": 63.840244,
+        "unlocked-repeat": 102.597251
+      },
+      "unlocked_change_pct_range": [
+        60.70936539653577,
+        61.029412732194444
+      ]
+    },
+    {
+      "mode": "FP16/FP32",
+      "n": 4096,
+      "by_run": {
+        "unlocked": 122.702132,
+        "stock-rtd3off": 78.165357,
+        "unlocked-repeat": 113.633089
+      },
+      "unlocked_change_pct_range": [
+        45.37525748139293,
+        56.97763908376956
+      ]
+    },
+    {
+      "mode": "BF16/FP32",
+      "n": 4096,
+      "by_run": {
+        "unlocked": 155.280843,
+        "stock-rtd3off": 76.438142,
+        "unlocked-repeat": 116.230981
+      },
+      "unlocked_change_pct_range": [
+        52.05887788324317,
+        103.14575804315078
+      ]
+    },
+    {
+      "mode": "FP16/FP32",
+      "n": 8192,
+      "by_run": {
+        "unlocked": 107.118201,
+        "stock-rtd3off": 74.915064,
+        "unlocked-repeat": 110.912286
+      },
+      "unlocked_change_pct_range": [
+        42.98619700838806,
+        48.05071247085899
+      ]
+    },
+    {
+      "mode": "BF16/FP32",
+      "n": 8192,
+      "by_run": {
+        "unlocked": 107.814604,
+        "stock-rtd3off": 72.581758,
+        "unlocked-repeat": 108.828676
+      },
+      "unlocked_change_pct_range": [
+        48.54228799473279,
+        49.93943243975989
+      ]
+    }
+  ],
+  "cubin_best_Top_s": {
+    "f16_f32": {
+      "by_run": {
+        "unlocked": 167.3863341777473,
+        "stock-rtd3off": 84.54869847647576,
+        "unlocked-repeat": 168.01051998440002
+      },
+      "unlocked_change_pct_range": [
+        97.97623995870227,
+        98.71449591994144
+      ]
+    },
+    "tf32": {
+      "by_run": {
+        "unlocked": 83.6073486325348,
+        "stock-rtd3off": 42.12875565766828,
+        "unlocked-repeat": 82.5197574583815
+      },
+      "unlocked_change_pct_range": [
+        95.87513604466325,
+        98.45672469397178
+      ]
+    },
+    "u4_s32": {
+      "by_run": {
+        "unlocked": 667.1874367160074,
+        "stock-rtd3off": 677.8504132610936,
+        "unlocked-repeat": 651.9834180989453
+      },
+      "unlocked_change_pct_range": [
+        -3.8160329559591033,
+        -1.573057467618466
+      ]
+    }
+  },
+  "numerical_identity": [
+    {
+      "kind": "gemm_numerical",
+      "mode": "fp16_fp32",
+      "shape_mkn": [
+        32,
+        64,
+        48
+      ],
+      "seed": 7,
+      "pattern": "dyadic",
+      "layout": "contiguous",
+      "input_strides": [
+        [
+          64,
+          1
+        ],
+        [
+          48,
+          1
+        ]
+      ],
+      "identical_fields": {
+        "sha256": true
+      }
+    },
+    {
+      "kind": "gemm_numerical",
+      "mode": "fp16_fp32",
+      "shape_mkn": [
+        32,
+        64,
+        48
+      ],
+      "seed": 7,
+      "pattern": "dyadic",
+      "layout": "transposed",
+      "input_strides": [
+        [
+          1,
+          32
+        ],
+        [
+          1,
+          64
+        ]
+      ],
+      "identical_fields": {
+        "sha256": true
+      }
+    },
+    {
+      "kind": "gemm_numerical",
+      "mode": "fp16_fp32",
+      "shape_mkn": [
+        32,
+        64,
+        48
+      ],
+      "seed": 7,
+      "pattern": "scaled_normal",
+      "layout": "contiguous",
+      "input_strides": [
+        [
+          64,
+          1
+        ],
+        [
+          48,
+          1
+        ]
+      ],
+      "identical_fields": {
+        "sha256": true
+      }
+    },
+    {
+      "kind": "gemm_numerical",
+      "mode": "fp16_fp32",
+      "shape_mkn": [
+        32,
+        64,
+        48
+      ],
+      "seed": 7,
+      "pattern": "scaled_normal",
+      "layout": "transposed",
+      "input_strides": [
+        [
+          1,
+          32
+        ],
+        [
+          1,
+          64
+        ]
+      ],
+      "identical_fields": {
+        "sha256": true
+      }
+    },
+    {
+      "kind": "gemm_numerical",
+      "mode": "fp16_fp32",
+      "shape_mkn": [
+        32,
+        64,
+        48
+      ],
+      "seed": 2026,
+      "pattern": "dyadic",
+      "layout": "contiguous",
+      "input_strides": [
+        [
+          64,
+          1
+        ],
+        [
+          48,
+          1
+        ]
+      ],
+      "identical_fields": {
+        "sha256": true
+      }
+    },
+    {
+      "kind": "gemm_numerical",
+      "mode": "fp16_fp32",
+      "shape_mkn": [
+        32,
+        64,
+        48
+      ],
+      "seed": 2026,
+      "pattern": "dyadic",
+      "layout": "transposed",
+      "input_strides": [
+        [
+          1,
+          32
+        ],
+        [
+          1,
+          64
+        ]
+      ],
+      "identical_fields": {
+        "sha256": true
+      }
+    },
+    {
+      "kind": "gemm_numerical",
+      "mode": "fp16_fp32",
+      "shape_mkn": [
+        32,
+        64,
+        48
+      ],
+      "seed": 2026,
+      "pattern": "scaled_normal",
+      "layout": "contiguous",
+      "input_strides": [
+        [
+          64,
+          1
+        ],
+        [
+          48,
+          1
+        ]
+      ],
+      "identical_fields": {
+        "sha256": true
+      }
+    },
+    {
+      "kind": "gemm_numerical",
+      "mode": "fp16_fp32",
+      "shape_mkn": [
+        32,
+        64,
+        48
+      ],
+      "seed": 2026,
+      "pattern": "scaled_normal",
+      "layout": "transposed",
+      "input_strides": [
+        [
+          1,
+          32
+        ],
+        [
+          1,
+          64
+        ]
+      ],
+      "identical_fields": {
+        "sha256": true
+      }
+    },
+    {
+      "kind": "gemm_numerical",
+      "mode": "fp16_fp32",
+      "shape_mkn": [
+        127,
+        95,
+        65
+      ],
+      "seed": 7,
+      "pattern": "dyadic",
+      "layout": "contiguous",
+      "input_strides": [
+        [
+          95,
+          1
+        ],
+        [
+          65,
+          1
+        ]
+      ],
+      "identical_fields": {
+        "sha256": true
+      }
+    },
+    {
+      "kind": "gemm_numerical",
+      "mode": "fp16_fp32",
+      "shape_mkn": [
+        127,
+        95,
+        65
+      ],
+      "seed": 7,
+      "pattern": "dyadic",
+      "layout": "transposed",
+      "input_strides": [
+        [
+          1,
+          127
+        ],
+        [
+          1,
+          95
+        ]
+      ],
+      "identical_fields": {
+        "sha256": true
+      }
+    },
+    {
+      "kind": "gemm_numerical",
+      "mode": "fp16_fp32",
+      "shape_mkn": [
+        127,
+        95,
+        65
+      ],
+      "seed": 7,
+      "pattern": "scaled_normal",
+      "layout": "contiguous",
+      "input_strides": [
+        [
+          95,
+          1
+        ],
+        [
+          65,
+          1
+        ]
+      ],
+      "identical_fields": {
+        "sha256": true
+      }
+    },
+    {
+      "kind": "gemm_numerical",
+      "mode": "fp16_fp32",
+      "shape_mkn": [
+        127,
+        95,
+        65
+      ],
+      "seed": 7,
+      "pattern": "scaled_normal",
+      "layout": "transposed",
+      "input_strides": [
+        [
+          1,
+          127
+        ],
+        [
+          1,
+          95
+        ]
+      ],
+      "identical_fields": {
+        "sha256": true
+      }
+    },
+    {
+      "kind": "gemm_numerical",
+      "mode": "fp16_fp32",
+      "shape_mkn": [
+        127,
+        95,
+        65
+      ],
+      "seed": 2026,
+      "pattern": "dyadic",
+      "layout": "contiguous",
+      "input_strides": [
+        [
+          95,
+          1
+        ],
+        [
+          65,
+          1
+        ]
+      ],
+      "identical_fields": {
+        "sha256": true
+      }
+    },
+    {
+      "kind": "gemm_numerical",
+      "mode": "fp16_fp32",
+      "shape_mkn": [
+        127,
+        95,
+        65
+      ],
+      "seed": 2026,
+      "pattern": "dyadic",
+      "layout": "transposed",
+      "input_strides": [
+        [
+          1,
+          127
+        ],
+        [
+          1,
+          95
+        ]
+      ],
+      "identical_fields": {
+        "sha256": true
+      }
+    },
+    {
+      "kind": "gemm_numerical",
+      "mode": "fp16_fp32",
+      "shape_mkn": [
+        127,
+        95,
+        65
+      ],
+      "seed": 2026,
+      "pattern": "scaled_normal",
+      "layout": "contiguous",
+      "input_strides": [
+        [
+          95,
+          1
+        ],
+        [
+          65,
+          1
+        ]
+      ],
+      "identical_fields": {
+        "sha256": true
+      }
+    },
+    {
+      "kind": "gemm_numerical",
+      "mode": "fp16_fp32",
+      "shape_mkn": [
+        127,
+        95,
+        65
+      ],
+      "seed": 2026,
+      "pattern": "scaled_normal",
+      "layout": "transposed",
+      "input_strides": [
+        [
+          1,
+          127
+        ],
+        [
+          1,
+          95
+        ]
+      ],
+      "identical_fields": {
+        "sha256": true
+      }
+    },
+    {
+      "kind": "gemm_numerical",
+      "mode": "fp16_fp32",
+      "shape_mkn": [
+        256,
+        256,
+        256
+      ],
+      "seed": 7,
+      "pattern": "dyadic",
+      "layout": "contiguous",
+      "input_strides": [
+        [
+          256,
+          1
+        ],
+        [
+          256,
+          1
+        ]
+      ],
+      "identical_fields": {
+        "sha256": true
+      }
+    },
+    {
+      "kind": "gemm_numerical",
+      "mode": "fp16_fp32",
+      "shape_mkn": [
+        256,
+        256,
+        256
+      ],
+      "seed": 7,
+      "pattern": "dyadic",
+      "layout": "transposed",
+      "input_strides": [
+        [
+          1,
+          256
+        ],
+        [
+          1,
+          256
+        ]
+      ],
+      "identical_fields": {
+        "sha256": true
+      }
+    },
+    {
+      "kind": "gemm_numerical",
+      "mode": "fp16_fp32",
+      "shape_mkn": [
+        256,
+        256,
+        256
+      ],
+      "seed": 7,
+      "pattern": "scaled_normal",
+      "layout": "contiguous",
+      "input_strides": [
+        [
+          256,
+          1
+        ],
+        [
+          256,
+          1
+        ]
+      ],
+      "identical_fields": {
+        "sha256": true
+      }
+    },
+    {
+      "kind": "gemm_numerical",
+      "mode": "fp16_fp32",
+      "shape_mkn": [
+        256,
+        256,
+        256
+      ],
+      "seed": 7,
+      "pattern": "scaled_normal",
+      "layout": "transposed",
+      "input_strides": [
+        [
+          1,
+          256
+        ],
+        [
+          1,
+          256
+        ]
+      ],
+      "identical_fields": {
+        "sha256": true
+      }
+    },
+    {
+      "kind": "gemm_numerical",
+      "mode": "fp16_fp32",
+      "shape_mkn": [
+        256,
+        256,
+        256
+      ],
+      "seed": 2026,
+      "pattern": "dyadic",
+      "layout": "contiguous",
+      "input_strides": [
+        [
+          256,
+          1
+        ],
+        [
+          256,
+          1
+        ]
+      ],
+      "identical_fields": {
+        "sha256": true
+      }
+    },
+    {
+      "kind": "gemm_numerical",
+      "mode": "fp16_fp32",
+      "shape_mkn": [
+        256,
+        256,
+        256
+      ],
+      "seed": 2026,
+      "pattern": "dyadic",
+      "layout": "transposed",
+      "input_strides": [
+        [
+          1,
+          256
+        ],
+        [
+          1,
+          256
+        ]
+      ],
+      "identical_fields": {
+        "sha256": true
+      }
+    },
+    {
+      "kind": "gemm_numerical",
+      "mode": "fp16_fp32",
+      "shape_mkn": [
+        256,
+        256,
+        256
+      ],
+      "seed": 2026,
+      "pattern": "scaled_normal",
+      "layout": "contiguous",
+      "input_strides": [
+        [
+          256,
+          1
+        ],
+        [
+          256,
+          1
+        ]
+      ],
+      "identical_fields": {
+        "sha256": true
+      }
+    },
+    {
+      "kind": "gemm_numerical",
+      "mode": "fp16_fp32",
+      "shape_mkn": [
+        256,
+        256,
+        256
+      ],
+      "seed": 2026,
+      "pattern": "scaled_normal",
+      "layout": "transposed",
+      "input_strides": [
+        [
+          1,
+          256
+        ],
+        [
+          1,
+          256
+        ]
+      ],
+      "identical_fields": {
+        "sha256": true
+      }
+    },
+    {
+      "kind": "gemm_numerical",
+      "mode": "fp16_fp32",
+      "shape_mkn": [
+        257,
+        513,
+        129
+      ],
+      "seed": 7,
+      "pattern": "dyadic",
+      "layout": "contiguous",
+      "input_strides": [
+        [
+          513,
+          1
+        ],
+        [
+          129,
+          1
+        ]
+      ],
+      "identical_fields": {
+        "sha256": true
+      }
+    },
+    {
+      "kind": "gemm_numerical",
+      "mode": "fp16_fp32",
+      "shape_mkn": [
+        257,
+        513,
+        129
+      ],
+      "seed": 7,
+      "pattern": "dyadic",
+      "layout": "transposed",
+      "input_strides": [
+        [
+          1,
+          257
+        ],
+        [
+          1,
+          513
+        ]
+      ],
+      "identical_fields": {
+        "sha256": true
+      }
+    },
+    {
+      "kind": "gemm_numerical",
+      "mode": "fp16_fp32",
+      "shape_mkn": [
+        257,
+        513,
+        129
+      ],
+      "seed": 7,
+      "pattern": "scaled_normal",
+      "layout": "contiguous",
+      "input_strides": [
+        [
+          513,
+          1
+        ],
+        [
+          129,
+          1
+        ]
+      ],
+      "identical_fields": {
+        "sha256": true
+      }
+    },
+    {
+      "kind": "gemm_numerical",
+      "mode": "fp16_fp32",
+      "shape_mkn": [
+        257,
+        513,
+        129
+      ],
+      "seed": 7,
+      "pattern": "scaled_normal",
+      "layout": "transposed",
+      "input_strides": [
+        [
+          1,
+          257
+        ],
+        [
+          1,
+          513
+        ]
+      ],
+      "identical_fields": {
+        "sha256": true
+      }
+    },
+    {
+      "kind": "gemm_numerical",
+      "mode": "fp16_fp32",
+      "shape_mkn": [
+        257,
+        513,
+        129
+      ],
+      "seed": 2026,
+      "pattern": "dyadic",
+      "layout": "contiguous",
+      "input_strides": [
+        [
+          513,
+          1
+        ],
+        [
+          129,
+          1
+        ]
+      ],
+      "identical_fields": {
+        "sha256": true
+      }
+    },
+    {
+      "kind": "gemm_numerical",
+      "mode": "fp16_fp32",
+      "shape_mkn": [
+        257,
+        513,
+        129
+      ],
+      "seed": 2026,
+      "pattern": "dyadic",
+      "layout": "transposed",
+      "input_strides": [
+        [
+          1,
+          257
+        ],
+        [
+          1,
+          513
+        ]
+      ],
+      "identical_fields": {
+        "sha256": true
+      }
+    },
+    {
+      "kind": "gemm_numerical",
+      "mode": "fp16_fp32",
+      "shape_mkn": [
+        257,
+        513,
+        129
+      ],
+      "seed": 2026,
+      "pattern": "scaled_normal",
+      "layout": "contiguous",
+      "input_strides": [
+        [
+          513,
+          1
+        ],
+        [
+          129,
+          1
+        ]
+      ],
+      "identical_fields": {
+        "sha256": true
+      }
+    },
+    {
+      "kind": "gemm_numerical",
+      "mode": "fp16_fp32",
+      "shape_mkn": [
+        257,
+        513,
+        129
+      ],
+      "seed": 2026,
+      "pattern": "scaled_normal",
+      "layout": "transposed",
+      "input_strides": [
+        [
+          1,
+          257
+        ],
+        [
+          1,
+          513
+        ]
+      ],
+      "identical_fields": {
+        "sha256": true
+      }
+    },
+    {
+      "kind": "gemm_numerical",
+      "mode": "bf16_fp32",
+      "shape_mkn": [
+        32,
+        64,
+        48
+      ],
+      "seed": 7,
+      "pattern": "dyadic",
+      "layout": "contiguous",
+      "input_strides": [
+        [
+          64,
+          1
+        ],
+        [
+          48,
+          1
+        ]
+      ],
+      "identical_fields": {
+        "sha256": true
+      }
+    },
+    {
+      "kind": "gemm_numerical",
+      "mode": "bf16_fp32",
+      "shape_mkn": [
+        32,
+        64,
+        48
+      ],
+      "seed": 7,
+      "pattern": "dyadic",
+      "layout": "transposed",
+      "input_strides": [
+        [
+          1,
+          32
+        ],
+        [
+          1,
+          64
+        ]
+      ],
+      "identical_fields": {
+        "sha256": true
+      }
+    },
+    {
+      "kind": "gemm_numerical",
+      "mode": "bf16_fp32",
+      "shape_mkn": [
+        32,
+        64,
+        48
+      ],
+      "seed": 7,
+      "pattern": "scaled_normal",
+      "layout": "contiguous",
+      "input_strides": [
+        [
+          64,
+          1
+        ],
+        [
+          48,
+          1
+        ]
+      ],
+      "identical_fields": {
+        "sha256": true
+      }
+    },
+    {
+      "kind": "gemm_numerical",
+      "mode": "bf16_fp32",
+      "shape_mkn": [
+        32,
+        64,
+        48
+      ],
+      "seed": 7,
+      "pattern": "scaled_normal",
+      "layout": "transposed",
+      "input_strides": [
+        [
+          1,
+          32
+        ],
+        [
+          1,
+          64
+        ]
+      ],
+      "identical_fields": {
+        "sha256": true
+      }
+    },
+    {
+      "kind": "gemm_numerical",
+      "mode": "bf16_fp32",
+      "shape_mkn": [
+        32,
+        64,
+        48
+      ],
+      "seed": 2026,
+      "pattern": "dyadic",
+      "layout": "contiguous",
+      "input_strides": [
+        [
+          64,
+          1
+        ],
+        [
+          48,
+          1
+        ]
+      ],
+      "identical_fields": {
+        "sha256": true
+      }
+    },
+    {
+      "kind": "gemm_numerical",
+      "mode": "bf16_fp32",
+      "shape_mkn": [
+        32,
+        64,
+        48
+      ],
+      "seed": 2026,
+      "pattern": "dyadic",
+      "layout": "transposed",
+      "input_strides": [
+        [
+          1,
+          32
+        ],
+        [
+          1,
+          64
+        ]
+      ],
+      "identical_fields": {
+        "sha256": true
+      }
+    },
+    {
+      "kind": "gemm_numerical",
+      "mode": "bf16_fp32",
+      "shape_mkn": [
+        32,
+        64,
+        48
+      ],
+      "seed": 2026,
+      "pattern": "scaled_normal",
+      "layout": "contiguous",
+      "input_strides": [
+        [
+          64,
+          1
+        ],
+        [
+          48,
+          1
+        ]
+      ],
+      "identical_fields": {
+        "sha256": true
+      }
+    },
+    {
+      "kind": "gemm_numerical",
+      "mode": "bf16_fp32",
+      "shape_mkn": [
+        32,
+        64,
+        48
+      ],
+      "seed": 2026,
+      "pattern": "scaled_normal",
+      "layout": "transposed",
+      "input_strides": [
+        [
+          1,
+          32
+        ],
+        [
+          1,
+          64
+        ]
+      ],
+      "identical_fields": {
+        "sha256": true
+      }
+    },
+    {
+      "kind": "gemm_numerical",
+      "mode": "bf16_fp32",
+      "shape_mkn": [
+        127,
+        95,
+        65
+      ],
+      "seed": 7,
+      "pattern": "dyadic",
+      "layout": "contiguous",
+      "input_strides": [
+        [
+          95,
+          1
+        ],
+        [
+          65,
+          1
+        ]
+      ],
+      "identical_fields": {
+        "sha256": true
+      }
+    },
+    {
+      "kind": "gemm_numerical",
+      "mode": "bf16_fp32",
+      "shape_mkn": [
+        127,
+        95,
+        65
+      ],
+      "seed": 7,
+      "pattern": "dyadic",
+      "layout": "transposed",
+      "input_strides": [
+        [
+          1,
+          127
+        ],
+        [
+          1,
+          95
+        ]
+      ],
+      "identical_fields": {
+        "sha256": true
+      }
+    },
+    {
+      "kind": "gemm_numerical",
+      "mode": "bf16_fp32",
+      "shape_mkn": [
+        127,
+        95,
+        65
+      ],
+      "seed": 7,
+      "pattern": "scaled_normal",
+      "layout": "contiguous",
+      "input_strides": [
+        [
+          95,
+          1
+        ],
+        [
+          65,
+          1
+        ]
+      ],
+      "identical_fields": {
+        "sha256": true
+      }
+    },
+    {
+      "kind": "gemm_numerical",
+      "mode": "bf16_fp32",
+      "shape_mkn": [
+        127,
+        95,
+        65
+      ],
+      "seed": 7,
+      "pattern": "scaled_normal",
+      "layout": "transposed",
+      "input_strides": [
+        [
+          1,
+          127
+        ],
+        [
+          1,
+          95
+        ]
+      ],
+      "identical_fields": {
+        "sha256": true
+      }
+    },
+    {
+      "kind": "gemm_numerical",
+      "mode": "bf16_fp32",
+      "shape_mkn": [
+        127,
+        95,
+        65
+      ],
+      "seed": 2026,
+      "pattern": "dyadic",
+      "layout": "contiguous",
+      "input_strides": [
+        [
+          95,
+          1
+        ],
+        [
+          65,
+          1
+        ]
+      ],
+      "identical_fields": {
+        "sha256": true
+      }
+    },
+    {
+      "kind": "gemm_numerical",
+      "mode": "bf16_fp32",
+      "shape_mkn": [
+        127,
+        95,
+        65
+      ],
+      "seed": 2026,
+      "pattern": "dyadic",
+      "layout": "transposed",
+      "input_strides": [
+        [
+          1,
+          127
+        ],
+        [
+          1,
+          95
+        ]
+      ],
+      "identical_fields": {
+        "sha256": true
+      }
+    },
+    {
+      "kind": "gemm_numerical",
+      "mode": "bf16_fp32",
+      "shape_mkn": [
+        127,
+        95,
+        65
+      ],
+      "seed": 2026,
+      "pattern": "scaled_normal",
+      "layout": "contiguous",
+      "input_strides": [
+        [
+          95,
+          1
+        ],
+        [
+          65,
+          1
+        ]
+      ],
+      "identical_fields": {
+        "sha256": true
+      }
+    },
+    {
+      "kind": "gemm_numerical",
+      "mode": "bf16_fp32",
+      "shape_mkn": [
+        127,
+        95,
+        65
+      ],
+      "seed": 2026,
+      "pattern": "scaled_normal",
+      "layout": "transposed",
+      "input_strides": [
+        [
+          1,
+          127
+        ],
+        [
+          1,
+          95
+        ]
+      ],
+      "identical_fields": {
+        "sha256": true
+      }
+    },
+    {
+      "kind": "gemm_numerical",
+      "mode": "bf16_fp32",
+      "shape_mkn": [
+        256,
+        256,
+        256
+      ],
+      "seed": 7,
+      "pattern": "dyadic",
+      "layout": "contiguous",
+      "input_strides": [
+        [
+          256,
+          1
+        ],
+        [
+          256,
+          1
+        ]
+      ],
+      "identical_fields": {
+        "sha256": true
+      }
+    },
+    {
+      "kind": "gemm_numerical",
+      "mode": "bf16_fp32",
+      "shape_mkn": [
+        256,
+        256,
+        256
+      ],
+      "seed": 7,
+      "pattern": "dyadic",
+      "layout": "transposed",
+      "input_strides": [
+        [
+          1,
+          256
+        ],
+        [
+          1,
+          256
+        ]
+      ],
+      "identical_fields": {
+        "sha256": true
+      }
+    },
+    {
+      "kind": "gemm_numerical",
+      "mode": "bf16_fp32",
+      "shape_mkn": [
+        256,
+        256,
+        256
+      ],
+      "seed": 7,
+      "pattern": "scaled_normal",
+      "layout": "contiguous",
+      "input_strides": [
+        [
+          256,
+          1
+        ],
+        [
+          256,
+          1
+        ]
+      ],
+      "identical_fields": {
+        "sha256": true
+      }
+    },
+    {
+      "kind": "gemm_numerical",
+      "mode": "bf16_fp32",
+      "shape_mkn": [
+        256,
+        256,
+        256
+      ],
+      "seed": 7,
+      "pattern": "scaled_normal",
+      "layout": "transposed",
+      "input_strides": [
+        [
+          1,
+          256
+        ],
+        [
+          1,
+          256
+        ]
+      ],
+      "identical_fields": {
+        "sha256": true
+      }
+    },
+    {
+      "kind": "gemm_numerical",
+      "mode": "bf16_fp32",
+      "shape_mkn": [
+        256,
+        256,
+        256
+      ],
+      "seed": 2026,
+      "pattern": "dyadic",
+      "layout": "contiguous",
+      "input_strides": [
+        [
+          256,
+          1
+        ],
+        [
+          256,
+          1
+        ]
+      ],
+      "identical_fields": {
+        "sha256": true
+      }
+    },
+    {
+      "kind": "gemm_numerical",
+      "mode": "bf16_fp32",
+      "shape_mkn": [
+        256,
+        256,
+        256
+      ],
+      "seed": 2026,
+      "pattern": "dyadic",
+      "layout": "transposed",
+      "input_strides": [
+        [
+          1,
+          256
+        ],
+        [
+          1,
+          256
+        ]
+      ],
+      "identical_fields": {
+        "sha256": true
+      }
+    },
+    {
+      "kind": "gemm_numerical",
+      "mode": "bf16_fp32",
+      "shape_mkn": [
+        256,
+        256,
+        256
+      ],
+      "seed": 2026,
+      "pattern": "scaled_normal",
+      "layout": "contiguous",
+      "input_strides": [
+        [
+          256,
+          1
+        ],
+        [
+          256,
+          1
+        ]
+      ],
+      "identical_fields": {
+        "sha256": true
+      }
+    },
+    {
+      "kind": "gemm_numerical",
+      "mode": "bf16_fp32",
+      "shape_mkn": [
+        256,
+        256,
+        256
+      ],
+      "seed": 2026,
+      "pattern": "scaled_normal",
+      "layout": "transposed",
+      "input_strides": [
+        [
+          1,
+          256
+        ],
+        [
+          1,
+          256
+        ]
+      ],
+      "identical_fields": {
+        "sha256": true
+      }
+    },
+    {
+      "kind": "gemm_numerical",
+      "mode": "bf16_fp32",
+      "shape_mkn": [
+        257,
+        513,
+        129
+      ],
+      "seed": 7,
+      "pattern": "dyadic",
+      "layout": "contiguous",
+      "input_strides": [
+        [
+          513,
+          1
+        ],
+        [
+          129,
+          1
+        ]
+      ],
+      "identical_fields": {
+        "sha256": true
+      }
+    },
+    {
+      "kind": "gemm_numerical",
+      "mode": "bf16_fp32",
+      "shape_mkn": [
+        257,
+        513,
+        129
+      ],
+      "seed": 7,
+      "pattern": "dyadic",
+      "layout": "transposed",
+      "input_strides": [
+        [
+          1,
+          257
+        ],
+        [
+          1,
+          513
+        ]
+      ],
+      "identical_fields": {
+        "sha256": true
+      }
+    },
+    {
+      "kind": "gemm_numerical",
+      "mode": "bf16_fp32",
+      "shape_mkn": [
+        257,
+        513,
+        129
+      ],
+      "seed": 7,
+      "pattern": "scaled_normal",
+      "layout": "contiguous",
+      "input_strides": [
+        [
+          513,
+          1
+        ],
+        [
+          129,
+          1
+        ]
+      ],
+      "identical_fields": {
+        "sha256": true
+      }
+    },
+    {
+      "kind": "gemm_numerical",
+      "mode": "bf16_fp32",
+      "shape_mkn": [
+        257,
+        513,
+        129
+      ],
+      "seed": 7,
+      "pattern": "scaled_normal",
+      "layout": "transposed",
+      "input_strides": [
+        [
+          1,
+          257
+        ],
+        [
+          1,
+          513
+        ]
+      ],
+      "identical_fields": {
+        "sha256": true
+      }
+    },
+    {
+      "kind": "gemm_numerical",
+      "mode": "bf16_fp32",
+      "shape_mkn": [
+        257,
+        513,
+        129
+      ],
+      "seed": 2026,
+      "pattern": "dyadic",
+      "layout": "contiguous",
+      "input_strides": [
+        [
+          513,
+          1
+        ],
+        [
+          129,
+          1
+        ]
+      ],
+      "identical_fields": {
+        "sha256": true
+      }
+    },
+    {
+      "kind": "gemm_numerical",
+      "mode": "bf16_fp32",
+      "shape_mkn": [
+        257,
+        513,
+        129
+      ],
+      "seed": 2026,
+      "pattern": "dyadic",
+      "layout": "transposed",
+      "input_strides": [
+        [
+          1,
+          257
+        ],
+        [
+          1,
+          513
+        ]
+      ],
+      "identical_fields": {
+        "sha256": true
+      }
+    },
+    {
+      "kind": "gemm_numerical",
+      "mode": "bf16_fp32",
+      "shape_mkn": [
+        257,
+        513,
+        129
+      ],
+      "seed": 2026,
+      "pattern": "scaled_normal",
+      "layout": "contiguous",
+      "input_strides": [
+        [
+          513,
+          1
+        ],
+        [
+          129,
+          1
+        ]
+      ],
+      "identical_fields": {
+        "sha256": true
+      }
+    },
+    {
+      "kind": "gemm_numerical",
+      "mode": "bf16_fp32",
+      "shape_mkn": [
+        257,
+        513,
+        129
+      ],
+      "seed": 2026,
+      "pattern": "scaled_normal",
+      "layout": "transposed",
+      "input_strides": [
+        [
+          1,
+          257
+        ],
+        [
+          1,
+          513
+        ]
+      ],
+      "identical_fields": {
+        "sha256": true
+      }
+    },
+    {
+      "kind": "gemm_numerical",
+      "mode": "fp32_ieee",
+      "shape_mkn": [
+        32,
+        64,
+        48
+      ],
+      "seed": 7,
+      "pattern": "dyadic",
+      "layout": "contiguous",
+      "input_strides": [
+        [
+          64,
+          1
+        ],
+        [
+          48,
+          1
+        ]
+      ],
+      "identical_fields": {
+        "sha256": true
+      }
+    },
+    {
+      "kind": "gemm_numerical",
+      "mode": "fp32_ieee",
+      "shape_mkn": [
+        32,
+        64,
+        48
+      ],
+      "seed": 7,
+      "pattern": "dyadic",
+      "layout": "transposed",
+      "input_strides": [
+        [
+          1,
+          32
+        ],
+        [
+          1,
+          64
+        ]
+      ],
+      "identical_fields": {
+        "sha256": true
+      }
+    },
+    {
+      "kind": "gemm_numerical",
+      "mode": "fp32_ieee",
+      "shape_mkn": [
+        32,
+        64,
+        48
+      ],
+      "seed": 7,
+      "pattern": "scaled_normal",
+      "layout": "contiguous",
+      "input_strides": [
+        [
+          64,
+          1
+        ],
+        [
+          48,
+          1
+        ]
+      ],
+      "identical_fields": {
+        "sha256": true
+      }
+    },
+    {
+      "kind": "gemm_numerical",
+      "mode": "fp32_ieee",
+      "shape_mkn": [
+        32,
+        64,
+        48
+      ],
+      "seed": 7,
+      "pattern": "scaled_normal",
+      "layout": "transposed",
+      "input_strides": [
+        [
+          1,
+          32
+        ],
+        [
+          1,
+          64
+        ]
+      ],
+      "identical_fields": {
+        "sha256": true
+      }
+    },
+    {
+      "kind": "gemm_numerical",
+      "mode": "fp32_ieee",
+      "shape_mkn": [
+        32,
+        64,
+        48
+      ],
+      "seed": 2026,
+      "pattern": "dyadic",
+      "layout": "contiguous",
+      "input_strides": [
+        [
+          64,
+          1
+        ],
+        [
+          48,
+          1
+        ]
+      ],
+      "identical_fields": {
+        "sha256": true
+      }
+    },
+    {
+      "kind": "gemm_numerical",
+      "mode": "fp32_ieee",
+      "shape_mkn": [
+        32,
+        64,
+        48
+      ],
+      "seed": 2026,
+      "pattern": "dyadic",
+      "layout": "transposed",
+      "input_strides": [
+        [
+          1,
+          32
+        ],
+        [
+          1,
+          64
+        ]
+      ],
+      "identical_fields": {
+        "sha256": true
+      }
+    },
+    {
+      "kind": "gemm_numerical",
+      "mode": "fp32_ieee",
+      "shape_mkn": [
+        32,
+        64,
+        48
+      ],
+      "seed": 2026,
+      "pattern": "scaled_normal",
+      "layout": "contiguous",
+      "input_strides": [
+        [
+          64,
+          1
+        ],
+        [
+          48,
+          1
+        ]
+      ],
+      "identical_fields": {
+        "sha256": true
+      }
+    },
+    {
+      "kind": "gemm_numerical",
+      "mode": "fp32_ieee",
+      "shape_mkn": [
+        32,
+        64,
+        48
+      ],
+      "seed": 2026,
+      "pattern": "scaled_normal",
+      "layout": "transposed",
+      "input_strides": [
+        [
+          1,
+          32
+        ],
+        [
+          1,
+          64
+        ]
+      ],
+      "identical_fields": {
+        "sha256": true
+      }
+    },
+    {
+      "kind": "gemm_numerical",
+      "mode": "fp32_ieee",
+      "shape_mkn": [
+        127,
+        95,
+        65
+      ],
+      "seed": 7,
+      "pattern": "dyadic",
+      "layout": "contiguous",
+      "input_strides": [
+        [
+          95,
+          1
+        ],
+        [
+          65,
+          1
+        ]
+      ],
+      "identical_fields": {
+        "sha256": true
+      }
+    },
+    {
+      "kind": "gemm_numerical",
+      "mode": "fp32_ieee",
+      "shape_mkn": [
+        127,
+        95,
+        65
+      ],
+      "seed": 7,
+      "pattern": "dyadic",
+      "layout": "transposed",
+      "input_strides": [
+        [
+          1,
+          127
+        ],
+        [
+          1,
+          95
+        ]
+      ],
+      "identical_fields": {
+        "sha256": true
+      }
+    },
+    {
+      "kind": "gemm_numerical",
+      "mode": "fp32_ieee",
+      "shape_mkn": [
+        127,
+        95,
+        65
+      ],
+      "seed": 7,
+      "pattern": "scaled_normal",
+      "layout": "contiguous",
+      "input_strides": [
+        [
+          95,
+          1
+        ],
+        [
+          65,
+          1
+        ]
+      ],
+      "identical_fields": {
+        "sha256": true
+      }
+    },
+    {
+      "kind": "gemm_numerical",
+      "mode": "fp32_ieee",
+      "shape_mkn": [
+        127,
+        95,
+        65
+      ],
+      "seed": 7,
+      "pattern": "scaled_normal",
+      "layout": "transposed",
+      "input_strides": [
+        [
+          1,
+          127
+        ],
+        [
+          1,
+          95
+        ]
+      ],
+      "identical_fields": {
+        "sha256": true
+      }
+    },
+    {
+      "kind": "gemm_numerical",
+      "mode": "fp32_ieee",
+      "shape_mkn": [
+        127,
+        95,
+        65
+      ],
+      "seed": 2026,
+      "pattern": "dyadic",
+      "layout": "contiguous",
+      "input_strides": [
+        [
+          95,
+          1
+        ],
+        [
+          65,
+          1
+        ]
+      ],
+      "identical_fields": {
+        "sha256": true
+      }
+    },
+    {
+      "kind": "gemm_numerical",
+      "mode": "fp32_ieee",
+      "shape_mkn": [
+        127,
+        95,
+        65
+      ],
+      "seed": 2026,
+      "pattern": "dyadic",
+      "layout": "transposed",
+      "input_strides": [
+        [
+          1,
+          127
+        ],
+        [
+          1,
+          95
+        ]
+      ],
+      "identical_fields": {
+        "sha256": true
+      }
+    },
+    {
+      "kind": "gemm_numerical",
+      "mode": "fp32_ieee",
+      "shape_mkn": [
+        127,
+        95,
+        65
+      ],
+      "seed": 2026,
+      "pattern": "scaled_normal",
+      "layout": "contiguous",
+      "input_strides": [
+        [
+          95,
+          1
+        ],
+        [
+          65,
+          1
+        ]
+      ],
+      "identical_fields": {
+        "sha256": true
+      }
+    },
+    {
+      "kind": "gemm_numerical",
+      "mode": "fp32_ieee",
+      "shape_mkn": [
+        127,
+        95,
+        65
+      ],
+      "seed": 2026,
+      "pattern": "scaled_normal",
+      "layout": "transposed",
+      "input_strides": [
+        [
+          1,
+          127
+        ],
+        [
+          1,
+          95
+        ]
+      ],
+      "identical_fields": {
+        "sha256": true
+      }
+    },
+    {
+      "kind": "gemm_numerical",
+      "mode": "fp32_ieee",
+      "shape_mkn": [
+        256,
+        256,
+        256
+      ],
+      "seed": 7,
+      "pattern": "dyadic",
+      "layout": "contiguous",
+      "input_strides": [
+        [
+          256,
+          1
+        ],
+        [
+          256,
+          1
+        ]
+      ],
+      "identical_fields": {
+        "sha256": true
+      }
+    },
+    {
+      "kind": "gemm_numerical",
+      "mode": "fp32_ieee",
+      "shape_mkn": [
+        256,
+        256,
+        256
+      ],
+      "seed": 7,
+      "pattern": "dyadic",
+      "layout": "transposed",
+      "input_strides": [
+        [
+          1,
+          256
+        ],
+        [
+          1,
+          256
+        ]
+      ],
+      "identical_fields": {
+        "sha256": true
+      }
+    },
+    {
+      "kind": "gemm_numerical",
+      "mode": "fp32_ieee",
+      "shape_mkn": [
+        256,
+        256,
+        256
+      ],
+      "seed": 7,
+      "pattern": "scaled_normal",
+      "layout": "contiguous",
+      "input_strides": [
+        [
+          256,
+          1
+        ],
+        [
+          256,
+          1
+        ]
+      ],
+      "identical_fields": {
+        "sha256": true
+      }
+    },
+    {
+      "kind": "gemm_numerical",
+      "mode": "fp32_ieee",
+      "shape_mkn": [
+        256,
+        256,
+        256
+      ],
+      "seed": 7,
+      "pattern": "scaled_normal",
+      "layout": "transposed",
+      "input_strides": [
+        [
+          1,
+          256
+        ],
+        [
+          1,
+          256
+        ]
+      ],
+      "identical_fields": {
+        "sha256": true
+      }
+    },
+    {
+      "kind": "gemm_numerical",
+      "mode": "fp32_ieee",
+      "shape_mkn": [
+        256,
+        256,
+        256
+      ],
+      "seed": 2026,
+      "pattern": "dyadic",
+      "layout": "contiguous",
+      "input_strides": [
+        [
+          256,
+          1
+        ],
+        [
+          256,
+          1
+        ]
+      ],
+      "identical_fields": {
+        "sha256": true
+      }
+    },
+    {
+      "kind": "gemm_numerical",
+      "mode": "fp32_ieee",
+      "shape_mkn": [
+        256,
+        256,
+        256
+      ],
+      "seed": 2026,
+      "pattern": "dyadic",
+      "layout": "transposed",
+      "input_strides": [
+        [
+          1,
+          256
+        ],
+        [
+          1,
+          256
+        ]
+      ],
+      "identical_fields": {
+        "sha256": true
+      }
+    },
+    {
+      "kind": "gemm_numerical",
+      "mode": "fp32_ieee",
+      "shape_mkn": [
+        256,
+        256,
+        256
+      ],
+      "seed": 2026,
+      "pattern": "scaled_normal",
+      "layout": "contiguous",
+      "input_strides": [
+        [
+          256,
+          1
+        ],
+        [
+          256,
+          1
+        ]
+      ],
+      "identical_fields": {
+        "sha256": true
+      }
+    },
+    {
+      "kind": "gemm_numerical",
+      "mode": "fp32_ieee",
+      "shape_mkn": [
+        256,
+        256,
+        256
+      ],
+      "seed": 2026,
+      "pattern": "scaled_normal",
+      "layout": "transposed",
+      "input_strides": [
+        [
+          1,
+          256
+        ],
+        [
+          1,
+          256
+        ]
+      ],
+      "identical_fields": {
+        "sha256": true
+      }
+    },
+    {
+      "kind": "gemm_numerical",
+      "mode": "fp32_ieee",
+      "shape_mkn": [
+        257,
+        513,
+        129
+      ],
+      "seed": 7,
+      "pattern": "dyadic",
+      "layout": "contiguous",
+      "input_strides": [
+        [
+          513,
+          1
+        ],
+        [
+          129,
+          1
+        ]
+      ],
+      "identical_fields": {
+        "sha256": true
+      }
+    },
+    {
+      "kind": "gemm_numerical",
+      "mode": "fp32_ieee",
+      "shape_mkn": [
+        257,
+        513,
+        129
+      ],
+      "seed": 7,
+      "pattern": "dyadic",
+      "layout": "transposed",
+      "input_strides": [
+        [
+          1,
+          257
+        ],
+        [
+          1,
+          513
+        ]
+      ],
+      "identical_fields": {
+        "sha256": true
+      }
+    },
+    {
+      "kind": "gemm_numerical",
+      "mode": "fp32_ieee",
+      "shape_mkn": [
+        257,
+        513,
+        129
+      ],
+      "seed": 7,
+      "pattern": "scaled_normal",
+      "layout": "contiguous",
+      "input_strides": [
+        [
+          513,
+          1
+        ],
+        [
+          129,
+          1
+        ]
+      ],
+      "identical_fields": {
+        "sha256": true
+      }
+    },
+    {
+      "kind": "gemm_numerical",
+      "mode": "fp32_ieee",
+      "shape_mkn": [
+        257,
+        513,
+        129
+      ],
+      "seed": 7,
+      "pattern": "scaled_normal",
+      "layout": "transposed",
+      "input_strides": [
+        [
+          1,
+          257
+        ],
+        [
+          1,
+          513
+        ]
+      ],
+      "identical_fields": {
+        "sha256": true
+      }
+    },
+    {
+      "kind": "gemm_numerical",
+      "mode": "fp32_ieee",
+      "shape_mkn": [
+        257,
+        513,
+        129
+      ],
+      "seed": 2026,
+      "pattern": "dyadic",
+      "layout": "contiguous",
+      "input_strides": [
+        [
+          513,
+          1
+        ],
+        [
+          129,
+          1
+        ]
+      ],
+      "identical_fields": {
+        "sha256": true
+      }
+    },
+    {
+      "kind": "gemm_numerical",
+      "mode": "fp32_ieee",
+      "shape_mkn": [
+        257,
+        513,
+        129
+      ],
+      "seed": 2026,
+      "pattern": "dyadic",
+      "layout": "transposed",
+      "input_strides": [
+        [
+          1,
+          257
+        ],
+        [
+          1,
+          513
+        ]
+      ],
+      "identical_fields": {
+        "sha256": true
+      }
+    },
+    {
+      "kind": "gemm_numerical",
+      "mode": "fp32_ieee",
+      "shape_mkn": [
+        257,
+        513,
+        129
+      ],
+      "seed": 2026,
+      "pattern": "scaled_normal",
+      "layout": "contiguous",
+      "input_strides": [
+        [
+          513,
+          1
+        ],
+        [
+          129,
+          1
+        ]
+      ],
+      "identical_fields": {
+        "sha256": true
+      }
+    },
+    {
+      "kind": "gemm_numerical",
+      "mode": "fp32_ieee",
+      "shape_mkn": [
+        257,
+        513,
+        129
+      ],
+      "seed": 2026,
+      "pattern": "scaled_normal",
+      "layout": "transposed",
+      "input_strides": [
+        [
+          1,
+          257
+        ],
+        [
+          1,
+          513
+        ]
+      ],
+      "identical_fields": {
+        "sha256": true
+      }
+    },
+    {
+      "kind": "gemm_numerical",
+      "mode": "tf32_allowed",
+      "shape_mkn": [
+        32,
+        64,
+        48
+      ],
+      "seed": 7,
+      "pattern": "dyadic",
+      "layout": "contiguous",
+      "input_strides": [
+        [
+          64,
+          1
+        ],
+        [
+          48,
+          1
+        ]
+      ],
+      "identical_fields": {
+        "sha256": true
+      }
+    },
+    {
+      "kind": "gemm_numerical",
+      "mode": "tf32_allowed",
+      "shape_mkn": [
+        32,
+        64,
+        48
+      ],
+      "seed": 7,
+      "pattern": "dyadic",
+      "layout": "transposed",
+      "input_strides": [
+        [
+          1,
+          32
+        ],
+        [
+          1,
+          64
+        ]
+      ],
+      "identical_fields": {
+        "sha256": true
+      }
+    },
+    {
+      "kind": "gemm_numerical",
+      "mode": "tf32_allowed",
+      "shape_mkn": [
+        32,
+        64,
+        48
+      ],
+      "seed": 7,
+      "pattern": "scaled_normal",
+      "layout": "contiguous",
+      "input_strides": [
+        [
+          64,
+          1
+        ],
+        [
+          48,
+          1
+        ]
+      ],
+      "identical_fields": {
+        "sha256": true
+      }
+    },
+    {
+      "kind": "gemm_numerical",
+      "mode": "tf32_allowed",
+      "shape_mkn": [
+        32,
+        64,
+        48
+      ],
+      "seed": 7,
+      "pattern": "scaled_normal",
+      "layout": "transposed",
+      "input_strides": [
+        [
+          1,
+          32
+        ],
+        [
+          1,
+          64
+        ]
+      ],
+      "identical_fields": {
+        "sha256": true
+      }
+    },
+    {
+      "kind": "gemm_numerical",
+      "mode": "tf32_allowed",
+      "shape_mkn": [
+        32,
+        64,
+        48
+      ],
+      "seed": 2026,
+      "pattern": "dyadic",
+      "layout": "contiguous",
+      "input_strides": [
+        [
+          64,
+          1
+        ],
+        [
+          48,
+          1
+        ]
+      ],
+      "identical_fields": {
+        "sha256": true
+      }
+    },
+    {
+      "kind": "gemm_numerical",
+      "mode": "tf32_allowed",
+      "shape_mkn": [
+        32,
+        64,
+        48
+      ],
+      "seed": 2026,
+      "pattern": "dyadic",
+      "layout": "transposed",
+      "input_strides": [
+        [
+          1,
+          32
+        ],
+        [
+          1,
+          64
+        ]
+      ],
+      "identical_fields": {
+        "sha256": true
+      }
+    },
+    {
+      "kind": "gemm_numerical",
+      "mode": "tf32_allowed",
+      "shape_mkn": [
+        32,
+        64,
+        48
+      ],
+      "seed": 2026,
+      "pattern": "scaled_normal",
+      "layout": "contiguous",
+      "input_strides": [
+        [
+          64,
+          1
+        ],
+        [
+          48,
+          1
+        ]
+      ],
+      "identical_fields": {
+        "sha256": true
+      }
+    },
+    {
+      "kind": "gemm_numerical",
+      "mode": "tf32_allowed",
+      "shape_mkn": [
+        32,
+        64,
+        48
+      ],
+      "seed": 2026,
+      "pattern": "scaled_normal",
+      "layout": "transposed",
+      "input_strides": [
+        [
+          1,
+          32
+        ],
+        [
+          1,
+          64
+        ]
+      ],
+      "identical_fields": {
+        "sha256": true
+      }
+    },
+    {
+      "kind": "gemm_numerical",
+      "mode": "tf32_allowed",
+      "shape_mkn": [
+        127,
+        95,
+        65
+      ],
+      "seed": 7,
+      "pattern": "dyadic",
+      "layout": "contiguous",
+      "input_strides": [
+        [
+          95,
+          1
+        ],
+        [
+          65,
+          1
+        ]
+      ],
+      "identical_fields": {
+        "sha256": true
+      }
+    },
+    {
+      "kind": "gemm_numerical",
+      "mode": "tf32_allowed",
+      "shape_mkn": [
+        127,
+        95,
+        65
+      ],
+      "seed": 7,
+      "pattern": "dyadic",
+      "layout": "transposed",
+      "input_strides": [
+        [
+          1,
+          127
+        ],
+        [
+          1,
+          95
+        ]
+      ],
+      "identical_fields": {
+        "sha256": true
+      }
+    },
+    {
+      "kind": "gemm_numerical",
+      "mode": "tf32_allowed",
+      "shape_mkn": [
+        127,
+        95,
+        65
+      ],
+      "seed": 7,
+      "pattern": "scaled_normal",
+      "layout": "contiguous",
+      "input_strides": [
+        [
+          95,
+          1
+        ],
+        [
+          65,
+          1
+        ]
+      ],
+      "identical_fields": {
+        "sha256": true
+      }
+    },
+    {
+      "kind": "gemm_numerical",
+      "mode": "tf32_allowed",
+      "shape_mkn": [
+        127,
+        95,
+        65
+      ],
+      "seed": 7,
+      "pattern": "scaled_normal",
+      "layout": "transposed",
+      "input_strides": [
+        [
+          1,
+          127
+        ],
+        [
+          1,
+          95
+        ]
+      ],
+      "identical_fields": {
+        "sha256": true
+      }
+    },
+    {
+      "kind": "gemm_numerical",
+      "mode": "tf32_allowed",
+      "shape_mkn": [
+        127,
+        95,
+        65
+      ],
+      "seed": 2026,
+      "pattern": "dyadic",
+      "layout": "contiguous",
+      "input_strides": [
+        [
+          95,
+          1
+        ],
+        [
+          65,
+          1
+        ]
+      ],
+      "identical_fields": {
+        "sha256": true
+      }
+    },
+    {
+      "kind": "gemm_numerical",
+      "mode": "tf32_allowed",
+      "shape_mkn": [
+        127,
+        95,
+        65
+      ],
+      "seed": 2026,
+      "pattern": "dyadic",
+      "layout": "transposed",
+      "input_strides": [
+        [
+          1,
+          127
+        ],
+        [
+          1,
+          95
+        ]
+      ],
+      "identical_fields": {
+        "sha256": true
+      }
+    },
+    {
+      "kind": "gemm_numerical",
+      "mode": "tf32_allowed",
+      "shape_mkn": [
+        127,
+        95,
+        65
+      ],
+      "seed": 2026,
+      "pattern": "scaled_normal",
+      "layout": "contiguous",
+      "input_strides": [
+        [
+          95,
+          1
+        ],
+        [
+          65,
+          1
+        ]
+      ],
+      "identical_fields": {
+        "sha256": true
+      }
+    },
+    {
+      "kind": "gemm_numerical",
+      "mode": "tf32_allowed",
+      "shape_mkn": [
+        127,
+        95,
+        65
+      ],
+      "seed": 2026,
+      "pattern": "scaled_normal",
+      "layout": "transposed",
+      "input_strides": [
+        [
+          1,
+          127
+        ],
+        [
+          1,
+          95
+        ]
+      ],
+      "identical_fields": {
+        "sha256": true
+      }
+    },
+    {
+      "kind": "gemm_numerical",
+      "mode": "tf32_allowed",
+      "shape_mkn": [
+        256,
+        256,
+        256
+      ],
+      "seed": 7,
+      "pattern": "dyadic",
+      "layout": "contiguous",
+      "input_strides": [
+        [
+          256,
+          1
+        ],
+        [
+          256,
+          1
+        ]
+      ],
+      "identical_fields": {
+        "sha256": true
+      }
+    },
+    {
+      "kind": "gemm_numerical",
+      "mode": "tf32_allowed",
+      "shape_mkn": [
+        256,
+        256,
+        256
+      ],
+      "seed": 7,
+      "pattern": "dyadic",
+      "layout": "transposed",
+      "input_strides": [
+        [
+          1,
+          256
+        ],
+        [
+          1,
+          256
+        ]
+      ],
+      "identical_fields": {
+        "sha256": true
+      }
+    },
+    {
+      "kind": "gemm_numerical",
+      "mode": "tf32_allowed",
+      "shape_mkn": [
+        256,
+        256,
+        256
+      ],
+      "seed": 7,
+      "pattern": "scaled_normal",
+      "layout": "contiguous",
+      "input_strides": [
+        [
+          256,
+          1
+        ],
+        [
+          256,
+          1
+        ]
+      ],
+      "identical_fields": {
+        "sha256": true
+      }
+    },
+    {
+      "kind": "gemm_numerical",
+      "mode": "tf32_allowed",
+      "shape_mkn": [
+        256,
+        256,
+        256
+      ],
+      "seed": 7,
+      "pattern": "scaled_normal",
+      "layout": "transposed",
+      "input_strides": [
+        [
+          1,
+          256
+        ],
+        [
+          1,
+          256
+        ]
+      ],
+      "identical_fields": {
+        "sha256": true
+      }
+    },
+    {
+      "kind": "gemm_numerical",
+      "mode": "tf32_allowed",
+      "shape_mkn": [
+        256,
+        256,
+        256
+      ],
+      "seed": 2026,
+      "pattern": "dyadic",
+      "layout": "contiguous",
+      "input_strides": [
+        [
+          256,
+          1
+        ],
+        [
+          256,
+          1
+        ]
+      ],
+      "identical_fields": {
+        "sha256": true
+      }
+    },
+    {
+      "kind": "gemm_numerical",
+      "mode": "tf32_allowed",
+      "shape_mkn": [
+        256,
+        256,
+        256
+      ],
+      "seed": 2026,
+      "pattern": "dyadic",
+      "layout": "transposed",
+      "input_strides": [
+        [
+          1,
+          256
+        ],
+        [
+          1,
+          256
+        ]
+      ],
+      "identical_fields": {
+        "sha256": true
+      }
+    },
+    {
+      "kind": "gemm_numerical",
+      "mode": "tf32_allowed",
+      "shape_mkn": [
+        256,
+        256,
+        256
+      ],
+      "seed": 2026,
+      "pattern": "scaled_normal",
+      "layout": "contiguous",
+      "input_strides": [
+        [
+          256,
+          1
+        ],
+        [
+          256,
+          1
+        ]
+      ],
+      "identical_fields": {
+        "sha256": true
+      }
+    },
+    {
+      "kind": "gemm_numerical",
+      "mode": "tf32_allowed",
+      "shape_mkn": [
+        256,
+        256,
+        256
+      ],
+      "seed": 2026,
+      "pattern": "scaled_normal",
+      "layout": "transposed",
+      "input_strides": [
+        [
+          1,
+          256
+        ],
+        [
+          1,
+          256
+        ]
+      ],
+      "identical_fields": {
+        "sha256": true
+      }
+    },
+    {
+      "kind": "gemm_numerical",
+      "mode": "tf32_allowed",
+      "shape_mkn": [
+        257,
+        513,
+        129
+      ],
+      "seed": 7,
+      "pattern": "dyadic",
+      "layout": "contiguous",
+      "input_strides": [
+        [
+          513,
+          1
+        ],
+        [
+          129,
+          1
+        ]
+      ],
+      "identical_fields": {
+        "sha256": true
+      }
+    },
+    {
+      "kind": "gemm_numerical",
+      "mode": "tf32_allowed",
+      "shape_mkn": [
+        257,
+        513,
+        129
+      ],
+      "seed": 7,
+      "pattern": "dyadic",
+      "layout": "transposed",
+      "input_strides": [
+        [
+          1,
+          257
+        ],
+        [
+          1,
+          513
+        ]
+      ],
+      "identical_fields": {
+        "sha256": true
+      }
+    },
+    {
+      "kind": "gemm_numerical",
+      "mode": "tf32_allowed",
+      "shape_mkn": [
+        257,
+        513,
+        129
+      ],
+      "seed": 7,
+      "pattern": "scaled_normal",
+      "layout": "contiguous",
+      "input_strides": [
+        [
+          513,
+          1
+        ],
+        [
+          129,
+          1
+        ]
+      ],
+      "identical_fields": {
+        "sha256": true
+      }
+    },
+    {
+      "kind": "gemm_numerical",
+      "mode": "tf32_allowed",
+      "shape_mkn": [
+        257,
+        513,
+        129
+      ],
+      "seed": 7,
+      "pattern": "scaled_normal",
+      "layout": "transposed",
+      "input_strides": [
+        [
+          1,
+          257
+        ],
+        [
+          1,
+          513
+        ]
+      ],
+      "identical_fields": {
+        "sha256": true
+      }
+    },
+    {
+      "kind": "gemm_numerical",
+      "mode": "tf32_allowed",
+      "shape_mkn": [
+        257,
+        513,
+        129
+      ],
+      "seed": 2026,
+      "pattern": "dyadic",
+      "layout": "contiguous",
+      "input_strides": [
+        [
+          513,
+          1
+        ],
+        [
+          129,
+          1
+        ]
+      ],
+      "identical_fields": {
+        "sha256": true
+      }
+    },
+    {
+      "kind": "gemm_numerical",
+      "mode": "tf32_allowed",
+      "shape_mkn": [
+        257,
+        513,
+        129
+      ],
+      "seed": 2026,
+      "pattern": "dyadic",
+      "layout": "transposed",
+      "input_strides": [
+        [
+          1,
+          257
+        ],
+        [
+          1,
+          513
+        ]
+      ],
+      "identical_fields": {
+        "sha256": true
+      }
+    },
+    {
+      "kind": "gemm_numerical",
+      "mode": "tf32_allowed",
+      "shape_mkn": [
+        257,
+        513,
+        129
+      ],
+      "seed": 2026,
+      "pattern": "scaled_normal",
+      "layout": "contiguous",
+      "input_strides": [
+        [
+          513,
+          1
+        ],
+        [
+          129,
+          1
+        ]
+      ],
+      "identical_fields": {
+        "sha256": true
+      }
+    },
+    {
+      "kind": "gemm_numerical",
+      "mode": "tf32_allowed",
+      "shape_mkn": [
+        257,
+        513,
+        129
+      ],
+      "seed": 2026,
+      "pattern": "scaled_normal",
+      "layout": "transposed",
+      "input_strides": [
+        [
+          1,
+          257
+        ],
+        [
+          1,
+          513
+        ]
+      ],
+      "identical_fields": {
+        "sha256": true
+      }
+    },
+    {
+      "kind": "flash_attention",
+      "dtype": "torch.float16",
+      "shape": [
+        2,
+        4,
+        127,
+        64
+      ],
+      "backend": "FLASH_ATTENTION forced",
+      "causal": true,
+      "identical_fields": {
+        "output_sha256": true
+      }
+    },
+    {
+      "kind": "flash_attention",
+      "dtype": "torch.float16",
+      "shape": [
+        2,
+        4,
+        256,
+        64
+      ],
+      "backend": "FLASH_ATTENTION forced",
+      "causal": true,
+      "identical_fields": {
+        "output_sha256": true
+      }
+    },
+    {
+      "kind": "synthetic_mlp_training",
+      "dtype": "torch.float16",
+      "steps": 50,
+      "identical_fields": {
+        "final_weights_sha256": true,
+        "losses": true
+      }
+    },
+    {
+      "kind": "flash_attention",
+      "dtype": "torch.bfloat16",
+      "shape": [
+        2,
+        4,
+        127,
+        64
+      ],
+      "backend": "FLASH_ATTENTION forced",
+      "causal": true,
+      "identical_fields": {
+        "output_sha256": true
+      }
+    },
+    {
+      "kind": "flash_attention",
+      "dtype": "torch.bfloat16",
+      "shape": [
+        2,
+        4,
+        256,
+        64
+      ],
+      "backend": "FLASH_ATTENTION forced",
+      "causal": true,
+      "identical_fields": {
+        "output_sha256": true
+      }
+    },
+    {
+      "kind": "synthetic_mlp_training",
+      "dtype": "torch.bfloat16",
+      "steps": 50,
+      "identical_fields": {
+        "final_weights_sha256": true,
+        "losses": true
+      }
+    }
+  ],
+  "all_compared_outputs_identical": true,
+  "telemetry": {
+    "unlocked": {
+      "samples": 105,
+      "power.draw [W]": {
+        "min": 20.58,
+        "mean": 81.21742857142857,
+        "max": 119.61
+      },
+      "temperature.gpu": {
+        "min": 54.0,
+        "mean": 59.51428571428571,
+        "max": 64.0
+      },
+      "clocks.current.sm [MHz]": {
+        "min": 390.0,
+        "mean": 1973.2857142857142,
+        "max": 2295.0
+      },
+      "clocks.current.memory [MHz]": {
+        "min": 810.0,
+        "mean": 8376.923809523809,
+        "max": 9001.0
+      },
+      "utilization.gpu [%]": {
+        "min": 7.0,
+        "mean": 66.05714285714286,
+        "max": 100.0
+      }
+    },
+    "stock-rtd3off": {
+      "samples": 152,
+      "power.draw [W]": {
+        "min": 23.18,
+        "mean": 74.85927631578947,
+        "max": 125.31
+      },
+      "temperature.gpu": {
+        "min": 49.0,
+        "mean": 54.18421052631579,
+        "max": 59.0
+      },
+      "clocks.current.sm [MHz]": {
+        "min": 1110.0,
+        "mean": 2143.815789473684,
+        "max": 2310.0
+      },
+      "clocks.current.memory [MHz]": {
+        "min": 7001.0,
+        "mean": 8922.052631578947,
+        "max": 9001.0
+      },
+      "utilization.gpu [%]": {
+        "min": 8.0,
+        "mean": 60.85526315789474,
+        "max": 100.0
+      }
+    },
+    "unlocked-repeat": {
+      "samples": 121,
+      "power.draw [W]": {
+        "min": 19.55,
+        "mean": 73.13694214876033,
+        "max": 122.75
+      },
+      "temperature.gpu": {
+        "min": 47.0,
+        "mean": 52.8099173553719,
+        "max": 57.0
+      },
+      "clocks.current.sm [MHz]": {
+        "min": 495.0,
+        "mean": 2006.404958677686,
+        "max": 2310.0
+      },
+      "clocks.current.memory [MHz]": {
+        "min": 810.0,
+        "mean": 8662.528925619834,
+        "max": 9001.0
+      },
+      "utilization.gpu [%]": {
+        "min": 8.0,
+        "mean": 66.05785123966942,
+        "max": 100.0
+      }
+    }
+  },
+  "limits": [
+    "One stock boot, two unlocked boots; five within-run timing repetitions are not five independent boots.",
+    "Dynamic clocks and active desktop; initial temperatures differ; no clock-normalized performance or energy-efficiency claim.",
+    "Hash identity applies only to recorded outputs/weights; gradients passed tolerance checks, with no gradient hashes recorded.",
+    "Synthetic arithmetic and operator tests do not establish real-model speedups."
+  ]
+}

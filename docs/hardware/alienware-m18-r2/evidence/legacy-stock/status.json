@@ -1,0 +1,18 @@
+{
+  "complete": true,
+  "commands": [
+    {
+      "name": "validate_gemm",
+      "exit": 0
+    },
+    {
+      "name": "mma_bench",
+      "exit": 0
+    },
+    {
+      "name": "gemm_bench",
+      "exit": 0
+    }
+  ],
+  "runtime_status_after": "active"
+}

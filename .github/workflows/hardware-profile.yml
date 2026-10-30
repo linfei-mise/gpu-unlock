@@ -1,0 +1,16 @@
+name: Hardware profile guards
+on:
+  push:
+  pull_request:
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  profile:
+    runs-on: ubuntu-24.04
+    steps:
+      - uses: actions/checkout@v5
+      - name: CPU-only guards and vendored source provenance
+        run: python3 -m unittest discover -s tests -p 'test_alienware_*.py' -v
+      - name: Python syntax
+        run: python3 -m compileall -q diagnostics/alienware_m18_r2 diagnostics/summarize_alienware.py

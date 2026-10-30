@@ -1,0 +1,38 @@
+{
+  "repository": "https://github.com/JustAResearcher/gpu-unlock-ada",
+  "commit": "d28c485418c3d9d034cd4bac19200bc33dd3453b",
+  "files": {
+    "mma_bench.cu": {
+      "path": "diagnostics/bench/mma_bench.cu",
+      "sha256": "7a02decd30c017ec05b61d25c34cf46958242ceeed65852c31ea0736dbdefca4"
+    },
+    "validate_gemm.cu": {
+      "path": "diagnostics/bench/validate_gemm.cu",
+      "sha256": "9bebdbd5fc0975ec6f48c0356f51c4218dd6768cc81eff107dfb5448f10e3c69"
+    },
+    "gemm_inputs.h": {
+      "path": "diagnostics/bench/gemm_inputs.h",
+      "sha256": "c6005990cbc8ebc584e46ceca6b04a86213bd8399bb59bad3881a9c3b86a436d"
+    },
+    "bench_args.h": {
+      "path": "diagnostics/bench/bench_args.h",
+      "sha256": "bd548217d69e262df0dc682b142bbda7f32fb6061fcdbe448fa3882ddfb13400"
+    },
+    "gemm_bench.cu": {
+      "path": "docs/evidence/rtx4090-pr1-stock/gemm_bench.cu",
+      "sha256": "c35ec706f9587b9749bf369a35d4dfca9e88c666c4582726490e0138cdd6e240"
+    },
+    "tensor_modes_issue.cu": {
+      "path": "diagnostics/bench/tensor_modes_issue.cu",
+      "sha256": "46cc852ec15ba2d12a259d7698e8fcd2104dfb07a5947a38d46c7bd6b5f5462f"
+    },
+    "tensor_modes_driver_runner.py": {
+      "path": "diagnostics/bench/tensor_modes_driver_runner.py",
+      "sha256": "b8dc74765959a9102f5bda7c396ea7457b5669dcefa4fbaf326bc3046d2920aa"
+    },
+    "read_sm_rates.py": {
+      "path": "tools/read_sm_rates.py",
+      "sha256": "1e5ef78dfcbe8ce5960fd81c81eb1ede86f08babbb8715d7e40ac1e8f9329421"
+    }
+  }
+}

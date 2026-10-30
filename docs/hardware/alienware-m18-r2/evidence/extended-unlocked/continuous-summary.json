@@ -1,0 +1,10 @@
+{
+  "kind": "continuous_gemm_summary",
+  "elapsed_s": 600.2394655140001,
+  "batches": 928,
+  "cells_checked": 15569256448,
+  "peak_temperature_c": 66.0,
+  "peak_sampled_power_w": 128.49,
+  "mean_sampled_utilization_pct": 98.00969827586206,
+  "sum_gpu_ms": 580323.0171508789
+}
